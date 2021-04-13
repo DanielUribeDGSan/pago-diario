@@ -1,0 +1,2127 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	text-rendering: optimizeLegibility;
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+h1,h2,h3,h4{
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p, a {
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+figure img {
+	width: 100%;
+	height: auto;
+}
+
+.has-error {
+	border: 1px solid red !important;
+}
+
+.horizon {
+	opacity: 0;
+}
+
+
+.flex {
+	display: flex;
+}
+
+
+.container {
+	max-width: 1200px;
+	min-width: 100%;
+	margin: auto;
+}
+
+header {
+	padding-top: 45px;
+	margin-bottom: 150px;
+}
+
+header .flex {
+	justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header .container svg {
+	width: 210px;
+}
+
+header nav {
+	display: flex;
+	align-items: center;
+}
+
+header nav .close {
+	display: none;
+}
+
+header nav a {
+	color: #fff;
+	font-family: Montserrat;
+	font-size: 0.875rem;
+	line-height: 17px;
+	text-align: center;
+	text-decoration: none;
+	margin-right: 0.9375rem;
+}
+
+.burger {
+    width: 52px;
+    height: 52px;
+    background: #1A448F;
+    border-radius: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 13px;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 90%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin-bottom: 3px;
+    text-align: right;
+}
+
+.burger span:nth-child(2) {
+    width: 75%;
+}
+
+
+header nav a.btn-azul_pd {
+	border-radius: 7px;
+	background: #1A448F;
+	color: #FFF;
+	font-family: Montserrat;
+	font-size: 14px;
+	letter-spacing: 2.87px;
+	line-height: 17px;
+}
+
+header nav a.btn-azul_pd.login {
+	display: inline-block;
+	height: 30px;
+  	width: 212px;
+	margin-left: 3rem;
+	margin-right: 1.25rem;
+	text-align: center;
+	line-height: 30px;
+}
+
+header nav a.btn-azul_pd.contacto {
+	display: inline-block;
+  	height: 30px;
+  	width: 162px;
+	margin-right: 0;
+	text-align: center;
+	line-height: 30px;
+}
+
+header nav a.btn-azul_pd:hover {
+	background: #FFF;
+	color: #1A448F;
+	border: 1px solid #1A448F;
+}
+
+
+div.poup-colaboradores {
+	width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.80);
+    transition: all .3s ease;
+    z-index: 9;
+    display: none;
+    overflow: hidden;
+}
+
+
+div.poup-colaboradores span.close {
+    position: absolute;
+    right: 170px;
+    top: 80px;
+    display: block;
+    cursor: pointer;
+}
+
+div.poup-colaboradores h3 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: Montserrat;
+    display: block;
+    margin-bottom: 20px;
+    /*margin-top: 70px;*/
+}
+
+
+div.poup-colaboradores p {
+	font-family: Montserrat;
+	font-size: 18px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+
+div.poup-colaboradores .container {
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	max-width: 700px;
+	background: #fff;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+	position: relative;
+	min-width: 0;
+}
+
+div.poup-colaboradores .container .close {
+	position: absolute;
+	right: 15px;
+	top: 5px;
+	display: block;
+	cursor: pointer;
+	font-weight: 100;
+}
+
+
+div.poup-colaboradores .container form {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	width: 90%;
+}
+
+div.poup-colaboradores .container form div {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+
+div.poup-colaboradores .container form input[type="text"] {
+	width: 100%;
+	height: 50px;
+	text-transform: none;
+	font-weight: normal;
+	letter-spacing: 0.1rem;
+	color: #666;
+	outline: none;
+	font-family: Montserrat;
+	font-size: 16px;
+	background-color: #f4f4f4;
+	border: 1px solid #f4f4f4;
+	margin-bottom: 20px;
+	padding-left: 30px;
+}
+
+/* checkbox */
+
+input[type="checkbox"] + label::before {
+	content: "";
+	width: 26px;
+	height: 26px;
+	float: left;
+	margin: 0.5em 0.5em 0 0;
+	border: 2px solid #ccc;
+	background: #fff;
+	cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label::before {
+	border-color: #0fbf12;
+}
+
+input[type="checkbox"]:checked + label::after {
+    content: "";
+    width: 12px;
+    height: 6px;
+    border: 4px solid #0fbf12;
+    float: left;
+    margin-left: -1.95em;
+    border-right: 0;
+    border-top: 0;
+    margin-top: 1em;
+    transform: rotate(-55deg);
+}
+	
+input[type="checkbox"] {
+	display: none;
+}
+
+input[type="checkbox"] + label {
+    font-weight: bold;
+    line-height: 3em;
+    color: #ccc;
+}
+
+input[type="checkbox"]:checked + label {
+    color: #0fbf12;
+}
+
+
+/* checkbox \ */
+
+
+div.poup-colaboradores .container form input::placeholder {
+	padding-left: 30px;
+}
+
+
+div.poup-colaboradores .container form button {
+	width: 200px;
+	height: 50px;
+	background: #1A448F;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-family: Montserrat;
+	font-size: 13px;
+	font-weight: 200;
+}
+
+
+div.poup-videoyt {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.80);
+    transition: all .3s ease;
+    z-index: 9;
+    display: none;
+    overflow: hidden;
+    min-width: 0;
+}
+
+div.poup-videoyt span.close {
+    position: absolute;
+    right: 170px;
+    top: 80px;
+    display: block;
+    cursor: pointer;
+}
+
+
+div.poup-videoyt .container {
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	max-width: 700px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+	position: relative;
+	min-width: 0;
+}
+
+div.poup-videoyt .container .close {
+	position: absolute;
+	right: 15px;
+	top: 5px;
+	display: block;
+	cursor: pointer;
+	font-weight: 100;
+	color: #fff;
+}
+
+
+
+
+div.poup-empresas {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.80);
+    transition: all .3s ease;
+    z-index: 9;
+    display: none;
+    overflow: hidden;
+}
+
+div.poup-empresas span.close {
+    position: absolute;
+    right: 170px;
+    top: 80px;
+    display: block;
+    cursor: pointer;
+}
+
+div.poup-empresas h3 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: Montserrat;
+    display: block;
+    margin-bottom: 20px;
+    /*margin-top: 70px;*/
+}
+
+
+div.poup-empresas p {
+	font-family: Montserrat;
+	font-size: 18px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+
+div.poup-empresas .container {
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	max-width: 700px;
+	background: #fff;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+	position: relative;
+	min-width: 0;
+}
+
+div.poup-empresas .container .close {
+	position: absolute;
+	right: 15px;
+	top: 5px;
+	display: block;
+	cursor: pointer;
+	font-weight: 100;
+}
+
+
+div.poup-empresas .container form {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	width: 90%;
+}
+
+div.poup-empresas .container form div {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+div.poup-empresas .container form input[type="number"],
+div.poup-empresas .container form input[type="text"] {
+	width: 100%;
+	height: 50px;
+	text-transform: none;
+	font-weight: normal;
+	letter-spacing: 0.1rem;
+	color: #666;
+	outline: none;
+	font-family: Montserrat;
+	font-size: 16px;
+	background-color: #f4f4f4;
+	border: 1px solid #f4f4f4;
+	margin-bottom: 20px;
+	padding-left: 30px;
+}
+
+
+div.poup-empresas .container form input::placeholder {
+	padding-left: 30px;
+}
+
+
+div.poup-empresas .container form button {
+	width: 200px;
+	height: 50px;
+	background: #1A448F;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-family: Montserrat;
+	font-size: 13px;
+	font-weight: 200;
+}
+
+
+section.quepago {
+	margin-bottom: 300px;
+}
+
+
+section.quepago .container div {
+	width: 50%;
+	padding-top: 20px;
+	padding-left: 60px;
+}
+
+section.quepago .container {
+	position: relative;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+section.quepago .container figure.background-pd_blue {
+	position: absolute;
+	top: -257px;
+	left: 0;
+	width: 72vw;
+	z-index: -1;
+	height: 930px;
+}
+
+section.quepago .container figure.background-pd_blue img {
+	height: 100%;
+}
+
+section.quepago .container figure.diario-home {
+	width: 50%;
+	text-align: center;
+}
+
+
+section.quepago .container figure.diario-home img {
+	width: 80%;
+}
+
+
+section.quepago .container div h2 {
+	color: #FFF;
+	font-family: "Montserrat";
+	font-weight: 700;
+	font-size: 45px;
+	letter-spacing: 3px;
+	line-height: 50px;
+	margin-bottom: 30px;
+}
+
+section.quepago .container div h3 {
+	color: #FFF;
+	font-family: Montserrat;
+	font-size: 30px;
+	letter-spacing: 5px;
+	line-height: 60px;
+	font-weight: 300;
+}
+
+section.quepago .container div p {
+	color: #FFF;
+    font-family: Montserrat;
+    font-size: 22px;
+    letter-spacing: 3px;
+    line-height: 27px;
+    margin-bottom: 70px;
+}
+
+section.quepago .container div p a {
+	text-decoration: underline;
+	color: #fff;
+}
+
+section.quepago .container div button.empresa {
+	margin-right: 16px;
+}
+
+section.quepago .container div button {
+	border-radius: 7px;
+  	background-color: #018FC0;
+  	color: #FFF;
+	font-family: Montserrat;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 24px;
+	text-align: center;
+	height: 41px;
+  	width: 221.31px;
+	text-decoration: none;
+	border: 2px solid #018FC0;
+	cursor: pointer;
+	margin-bottom: 30px;
+}
+
+section.quepago .container div button:hover {
+	background-color: transparent;
+	border: 2px solid #fff;
+}
+
+section.section-ondemand {
+	margin-bottom: 250px;
+}
+
+section.section-ondemand .container {
+	background: #004E6E;
+}
+
+section.section-ondemand .container div.on-demand-texto h2 {
+	color: #FFF;
+	font-family: Montserrat;
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: 15px;
+	line-height: 80px;
+}
+
+section.section-ondemand .container div.on-demand-texto {
+	width: 60%;
+	padding: 100px;
+	padding-top: 50px;
+}
+
+
+section.section-ondemand .container div.on-demand-texto p.texto-tendencia {
+	color: #FFF;
+	font-family: Montserrat;
+	font-size: 25px;
+	line-height: 49px;
+	letter-spacing: 5px;
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+section.section-ondemand .container div.on-demand-texto hr {
+	height: 1px;
+	border: 4px solid #018FC0;
+	margin-bottom: 50px;
+}
+
+section.section-ondemand .container div.on-demand-texto p.first {
+	margin-bottom: 50px;
+}
+
+section.section-ondemand .container div.on-demand-texto p {
+	color: #FFF;
+	font-family: Montserrat;
+	font-size: 18px;
+	padding-right: 102px;
+}
+
+section.section-ondemand .container div.on-demand-imgs {
+	width: 40%;
+	position: relative;
+}
+
+section.section-ondemand .container div.on-demand-imgs figure.img-01 {
+	position: absolute;
+	top: -95px;
+}
+
+section.section-ondemand .container div.on-demand-imgs figure.img-02 {
+	position: absolute;
+	top: 238px;
+	left: -73px;
+	max-width: 290px;
+}
+
+section.section-ondemand .container div.on-demand-imgs figure.img-03 {
+	position: absolute;
+	top: 70%;
+	max-width: 350px;
+	right: 20%;
+	transform: translateY(-10%);
+}
+
+section.section-funcionamiento {
+	margin-bottom: 300px;
+}
+
+section.section-funcionamiento .container .container-funcionamiento p {
+	color: #666;
+	font-family: Montserrat;
+	font-size: 17px;
+	font-weight: 300;
+}
+
+
+section.section-funcionamiento .container {
+	flex-direction: column;
+}
+
+section.section-funcionamiento .container-funcionamiento {
+	display: flex;
+	position: sticky;
+	top: 5px;
+}
+
+
+
+section.section-funcionamiento .container-funcionamiento > div {
+	width: 50%;
+}
+
+
+section.section-funcionamiento .container-funcionamiento div div.last {
+	display: none;
+	padding-top: 70px;
+	padding-right: 70px;
+}
+
+section.section-funcionamiento .container-funcionamiento div div.first {
+	padding-top: 70px;
+	padding-right: 70px;
+}
+
+
+section.section-funcionamiento .container-funcionamiento div h3 {
+	color: #4F4F4F;
+	font-family: Montserrat;
+	font-size: 26px;
+	letter-spacing: 4px;
+	line-height: 35px;
+	font-weight: 400;
+	margin-bottom: 40px;
+}
+
+
+section.section-funcionamiento .container-funcionamiento figure {
+	width: 50%;
+	position: relative;
+}
+
+section.section-funcionamiento .container-funcionamiento figure img {
+	position: relative;
+	left: -110px;
+}
+
+.contaiter-parallax {
+	width: 100%;
+	height: 500px;
+	background: red;
+	opacity: 0;
+	z-index: -1;
+}
+
+.d_entro {
+	display: none;
+}
+
+.f_uera {
+	display: block;
+}
+
+section.section-funcionamiento .container-funcionamiento figure img.last {
+	position: absolute;
+	width: 90px;
+	left: 45%;
+	top: 40%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+
+
+section.section-funcionamiento .container-funcionamiento div p:first-child {
+	margin-bottom: 50px;
+}
+
+
+section.section-funcionamiento .container-funcionamiento div p {
+	margin-bottom: 17px;
+}
+
+
+section.section-funcionamiento .container-funcionamiento div button {
+	font-size: 15px !important;
+	letter-spacing: 0 !important;
+}
+
+section.section-funcionamiento .container-funcionamiento div button,
+section.section-funcionamiento .container-funcionamiento div a {
+	margin-top: 30px;
+	height: 47px;
+	width: 401px;
+	border-radius: 7px;
+	background-color: #018FC0;
+	color: #FFF;
+	font-family: Montserrat;
+	font-weight: 700;
+	font-size: 18px;
+	letter-spacing: 3.58px;
+	line-height: 24px;
+	text-align: center;
+	cursor: pointer;
+	border: none;
+	display: block;
+	text-decoration: none;
+	line-height: 45px;
+}
+
+section.section-funcionamiento .container-funcionamiento div button:hover,
+section.section-funcionamiento .container-funcionamiento div a:hover {
+	background-color: #FFF;
+	color: #018FC0;
+	border: 2px solid #018FC0;
+}
+
+section.section-testimonios {
+	margin-bottom: 300px;
+}
+
+section.section-testimonios .container {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+section.section-testimonios .container > p {
+	color: #000;
+	font-family: Montserrat;
+	font-size: 26px;
+	line-height: 37px;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+section.section-testimonios .container .titulo-testimonios {
+	text-align: center;
+}
+
+
+
+section.section-testimonios .container .titulo-testimonios h2 {
+	color: #4F4F4F;
+	font-family: Montserrat;
+	font-size: 40px;
+	font-weight: 400;
+	letter-spacing: 15.13px;
+	line-height: 49px;
+	margin-bottom: 40px;
+	padding-left: 13px;
+}
+
+
+.slide-mobile {
+	display: none !important;
+}
+
+.slide-desktop {
+	width: 100%;
+	margin-bottom: 80px !important;
+}
+
+section.section-testimonios .slider-testimonios .container-card {
+	display: flex !important;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+section.section-testimonios .slider-testimonios .container-card .card-titulo {
+	height: 294.37px;
+	width: 249.41px;
+	opacity: 0.7;
+	background-color: #FFF;
+	box-shadow: -6px 0 23px 0 rgba(0,0,0,0.13);
+	margin-bottom: 47px;
+	position: relative;
+	padding: 100px 50px 50px 50px;
+}
+
+
+section.section-testimonios .slider-testimonios .container-card .card-titulo p.desc {
+	color: #666;
+	font-family: Montserrat;
+	font-size: 13px;
+	font-style: italic;
+	line-height: 16px;
+}
+
+section.section-testimonios .slider-testimonios .container-card .card-titulo p.cliente_nombre {
+	color: #666;
+	font-family: Montserrat;
+	font-size: 8px;
+	font-style: italic;
+	line-height: 10px;
+	position: absolute;
+	bottom: 33px;
+	left: 22px;
+}
+
+section.section-testimonios .slider-testimonios .container-card .card-titulo figure {
+	position: absolute;
+	bottom: 16px;
+	right: 15px;
+}
+
+section.section-testimonios .slider-testimonios .container-card .card-titulo {
+	margin-right: 30px;
+}
+
+
+section.beneficios-empresas {
+	margin-bottom: 250px;
+}
+
+section.beneficios-empresas .container {
+	flex-direction: column;
+}
+
+section.beneficios-empresas .container h2 {
+	color: #4F4F4F;
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 40px;
+	letter-spacing: 15.13px;
+	line-height: 49px;
+	margin-bottom: 110px;
+	text-align: center;
+}
+
+section.beneficios-empresas .container .container-beneficiosemp {
+	display: flex;
+}
+
+
+section.beneficios-empresas .container .container-beneficiosemp figure {
+	width: 50%;
+	position: relative;
+}
+
+section.beneficios-empresas .container .container-beneficiosemp figure img {
+	width: 50%;
+}
+
+section.beneficios-empresas .container .container-beneficiosemp figure img.img-two-be {
+	width: 50%;
+	position: absolute;
+	top: 56%;
+	transform: translateY(-50%);
+	right: 35px;
+}
+
+section.beneficios-empresas .container .container-beneficiosemp div {
+	width: 50%;
+	padding-left: 40px;
+	padding-top: 30px;
+	padding-right: 70px;
+}
+
+section.beneficios-empresas .container .container-beneficiosemp div button {
+	height: 47px;
+  	width: 258px;
+	border-radius: 7px;
+	background: #018FC0;
+	color: #FFF;
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 15px;
+	text-align: center;
+	border: 2px solid #018FC0;
+	margin-bottom: 35px;
+	cursor: pointer;
+	letter-spacing: 1px;
+}
+
+section.beneficios-empresas .container .container-beneficiosemp div button:hover {
+	background: #FFF;
+	color: #018FC0;
+}
+
+section.beneficios-empresas .container .container-beneficiosemp div p:first-child {
+	margin-bottom: 50px;
+}
+
+section.beneficios-empresas .container .container-beneficiosemp div p {
+	color: #666;
+	font-family: Montserrat;
+	font-size: 17px;
+	line-height: 25px;
+	margin-bottom: 30px;
+}
+
+
+section.beneficios-colab {
+	margin-bottom: 300px;
+}
+
+section.beneficios-colab .container {
+	flex-direction: column;
+}
+
+section.beneficios-colab .container h2 {
+	color: #4F4F4F;
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 40px;
+	letter-spacing: 10px;
+	line-height: 49px;
+	text-align: center;
+	margin-bottom: 110px;
+}
+
+section.beneficios-colab .container .container-beneficioscolab {
+	display: flex;
+}
+
+section.beneficios-colab .container .container-beneficioscolab div {
+	width: 50%;
+	padding-top: 55px;
+	padding-right: 20px;
+	padding-left: 70px;
+}
+
+section.beneficios-colab .container .container-beneficioscolab div p:first-child {
+	margin-bottom: 50px;
+}
+
+section.beneficios-colab .container .container-beneficioscolab div p:nth-child(5) {
+	margin-bottom: 80px;
+}
+
+section.beneficios-colab .container .container-beneficioscolab div p {
+	color: #666;
+	font-family: Montserrat;
+	font-size: 17px;
+	line-height: 32px;
+	margin-bottom: 17px;
+}
+
+section.beneficios-colab .container .container-beneficioscolab figure {
+	width: 50%;
+	position: relative;
+}
+
+section.beneficios-colab .container .container-beneficioscolab figure img {
+	width: 50%;
+}
+
+section.beneficios-colab .container .container-beneficioscolab figure img.img-two-bc {
+	position: absolute;
+	top: 55%;
+	transform: translateY(-50%);
+	right: 35px;
+}
+
+section.beneficios-colab .container .container-beneficioscolab div button {
+	height: 47px;
+	width: 301px;
+	border-radius: 7px;
+	background: #018FC0;
+	color: #FFF;
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 16px;
+	letter-spacing: 1px;
+	text-align: center;
+	border: 2px solid #018FC0;
+	margin-bottom: 35px;
+	cursor: pointer;
+}
+
+section.beneficios-colab .container .container-beneficioscolab div button:hover {
+	background: #FFF;
+	color: #018FC0;
+}
+
+
+
+
+footer {
+	background: #004E6E;
+	padding-top: 50px;
+}
+
+footer .container-infocontacto svg {
+	margin-bottom: 45px;
+	width: 300px;
+	padding-left: 65px;
+}
+
+footer .btn-plat_footer {
+	display: flex;
+}
+
+footer .btn-plat_footer a {
+	margin-bottom: 88px;
+}
+
+
+footer .btn-plat_footer a:first-child {
+	margin-right: 27px;
+}
+
+
+footer .btn-plat_footer a figure {
+	width: 170px;
+	margin-bottom: 0;
+}
+
+
+footer .container-infopg p {
+	color: #FFF;
+	font-family: Montserrat;
+	font-size: 19px;
+	line-height: 23px;
+}
+
+
+footer .container-infopg {
+	width: 30%;
+	padding-top: 100px;
+}
+
+footer .container-infocontacto {
+	width: 45%;
+	padding-left: 40px;
+}
+
+footer .container-infocontacto div p {
+	color: #FFF;
+	font-family: Montserrat;
+	line-height: 33px;
+	margin-bottom: 15px;
+	font-size: 17px;
+}
+
+footer .container-infocontacto div p i {
+	margin-right: 20px;
+}
+
+footer .container-infocontacto div p a.activo-icon {
+	text-decoration: none;
+	color: #fff;
+	font-size: 17px;
+}
+
+
+footer .container-infocontacto div {
+	display: flex;
+	flex-direction: column;
+	padding-left: 60px;
+	padding-right: 50px;
+}
+
+footer .container-infopg .icons-social {
+	display: flex;
+	flex-direction: row;
+	padding-top: 60px;
+	margin-bottom: 45px;
+	align-items: center;
+	justify-content: space-between;
+	padding-right: 10px;
+}
+
+
+
+footer .img-celular {
+	position: relative;
+	width: 23%;
+}
+
+footer .img-celular figure {
+	position: absolute;
+	top: -145px;
+	width: 330px;
+}
+
+footer .footercontainer {
+	padding-left: 50px;
+}
+
+
+
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+
+
+	/* SECCION 2 */
+
+	section.section-funcionamiento {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+
+	/* SECCION 3 */
+
+	section.section-testimonios {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+
+
+	/* SECCION 5 */
+
+	section.beneficios-empresas {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+
+	/* SECCION 6 */
+
+	section.beneficios-colab {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+
+}
+
+
+@media only screen and (min-width: 960px) and (max-width: 1024px) {
+
+	header {
+    	padding-left: 20px;
+    	padding-right: 20px;
+    }
+
+	.burger {
+    	display: flex;
+    }
+
+    nav {
+	    width: 100%;
+	    height: 100vh;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    background: #fff;
+	    transition: all .3s ease;
+	    visibility: hidden;
+	    visibility: hidden;
+	    opacity: 0;
+	    display: none;
+	    flex-direction: column;
+	    justify-content: center;
+	    z-index: 9;
+	}
+
+	header nav a {
+		margin-bottom: 40px;
+		font-size: 20px;
+	}
+
+
+	nav.active {
+	    visibility: visible;
+	    opacity: 1;
+	    display: flex;
+	}
+
+	nav.active span.close {
+	    position: absolute;
+	    right: 30px;
+		top: 30px;
+	    display: block;
+	    cursor: pointer;
+	}
+
+	header nav a.btn-azul_pd.login {
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+
+	header nav a.btn-azul_pd.contacto {
+		margin: 0 auto;
+		display: inline-block;
+	}
+
+	nav div {
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* SECTION 2 */
+
+	section.section-funcionamiento {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+
+	/* SECTION 3 */
+
+	section.section-testimonios {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	section.section-testimonios .container {
+		flex-direction: column;
+	}
+
+	section.section-testimonios .container .titulo-testimonios {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	section.section-testimonios .container .titulo-testimonios h2 {
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+	section.section-testimonios .container .slider-testimonios {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+
+	/* SECTION 5 */
+
+	section.beneficios-empresas {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+
+	/* SECTION 6 */
+
+	section.beneficios-colab {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+
+
+	/* FOOTER */
+
+	footer {
+		padding-bottom: 0;
+	}
+
+	footer .footercontainer {
+		flex-direction: column;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	footer .container-infopg {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 0;
+	}
+
+	footer .container-infopg p {
+		font-size: 26px;
+	}
+
+	footer .container-infocontacto {
+		width: 100%;
+	}
+
+	footer .container-infocontacto div {
+		padding: 0;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+	footer .img-celular {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	footer .img-celular figure {
+		position: relative;
+		top: 0;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	footer .container-infocontacto svg {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 40px;
+		padding-right: 50px;
+		padding-left: 0;
+	}
+
+	footer .container-infopg .icons-social {
+		padding-right: 0;
+	}
+
+	footer .container-infopg .icons-social figure {
+		margin-right: 30px;
+	}
+
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+	header {
+    	padding-left: 20px;
+    	padding-right: 20px;
+    }
+
+	.burger {
+    	display: flex;
+    }
+
+    nav {
+	    width: 100%;
+	    height: 100vh;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    background: #fff;
+	    transition: all .3s ease;
+	    visibility: hidden;
+	    visibility: hidden;
+	    opacity: 0;
+	    display: none;
+	    flex-direction: column;
+	    justify-content: center;
+	    z-index: 9;
+	}
+
+	header nav a {
+		margin-bottom: 40px;
+		font-size: 20px;
+	}
+
+
+	nav.active {
+	    visibility: visible;
+	    opacity: 1;
+	    display: flex;
+	}
+
+	nav.active span.close {
+	    position: absolute;
+	    right: 30px;
+		top: 30px;
+	    display: block;
+	    cursor: pointer;
+	}
+
+	header nav a.btn-azul_pd.login {
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+
+	header nav a.btn-azul_pd.contacto {
+		margin: 0 auto;
+		display: inline-block;
+	}
+
+	nav div {
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* SECTION 1 */
+
+	section.quepago {
+		padding-left: 0px;
+		padding-right: 0px;
+		margin-bottom: 200px;
+	}
+
+	section.quepago .container {
+		flex-direction: column;
+	}
+
+	section.quepago .container figure.background-pd_blue {
+		width: 100%;
+	}
+
+	section.quepago .container div h3 {
+		text-align: center;
+	}
+
+	section.quepago .container div {
+		width: 100%;
+		margin-bottom: 80px;
+	}
+
+	section.quepago .container div h2 {
+		text-align: center;
+		font-size: 20px;
+		letter-spacing: 5px;
+		line-height: 30px;
+	}
+
+	section.quepago .container div p {
+		font-size: 16px;
+		text-align: center;
+	}
+
+	section.quepago .container div p br {
+		display: none;
+	}
+
+	section.quepago .container figure.diario-home {
+		width: 100%;
+	}
+
+	section.quepago .container div button.empresa {
+		margin-right: 0;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+
+	section.quepago .container div button {
+		display: block;
+		margin: 0 auto;
+	}
+
+
+
+	/* SECTION 2 */
+
+	section.section-funcionamiento {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	section.section-funcionamiento .container .container-funcionamiento p {
+		font-size: 16px;
+	}
+
+	section.section-funcionamiento .container-funcionamiento div button {
+		width: 100%;
+	}
+
+
+	/* SECTION 3 */
+
+	section.section-testimonios {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	section.section-testimonios .container {
+		flex-direction: column;
+	}
+
+	section.section-testimonios .container .titulo-testimonios {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	section.section-testimonios .container .titulo-testimonios h2 {
+		font-size: 30px;
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+	section.section-testimonios .container .slider-testimonios {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+
+	/* SECTION 5 */
+
+	section.beneficios-empresas {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+	section.beneficios-empresas .container h2 {
+		font-size: 30px;
+	}
+
+	section.beneficios-empresas .container .container-beneficiosemp div button {
+		width: 100%;
+	}
+
+
+	/* SECTION 6 */
+
+	section.beneficios-colab {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+	section.beneficios-colab .container h2 {
+		font-size: 30px;
+	}
+
+	section.beneficios-colab .container .container-beneficioscolab div button {
+		width: 100%;
+	}
+
+
+	/* FOOTER */
+
+	footer {
+		padding-bottom: 0;
+	}
+
+	footer .footercontainer {
+		flex-direction: column;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	footer .container-infopg {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 0;
+	}
+
+	footer .container-infopg p {
+		font-size: 26px;
+	}
+
+	footer .container-infocontacto {
+		width: 100%;
+	}
+
+	footer .container-infocontacto div {
+		padding: 0;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+	footer .img-celular {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	footer .img-celular figure {
+		position: relative;
+		top: 0;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	footer .container-infocontacto svg {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 40px;
+		padding-right: 50px;
+		padding-left: 0;
+	}
+
+	footer .container-infopg .icons-social {
+		padding-right: 0;
+	}
+
+	footer .container-infopg .icons-social figure {
+		margin-right: 30px;
+	}
+
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+
+	header {
+    	padding-left: 20px;
+    	padding-right: 20px;
+    }
+
+    header .container svg {
+    	width: 170px;
+    }
+
+	.burger {
+    	display: flex;
+    }
+
+    nav {
+	    width: 100%;
+	    height: 100vh;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    background: #fff;
+	    transition: all .3s ease;
+	    visibility: hidden;
+	    visibility: hidden;
+	    opacity: 0;
+	    display: none;
+	    flex-direction: column;
+	    justify-content: center;
+	    z-index: 9;
+	}
+
+	header nav a {
+		margin-bottom: 40px;
+		font-size: 20px;
+	}
+
+
+	nav.active {
+	    visibility: visible;
+	    opacity: 1;
+	    display: flex;
+	}
+
+	nav.active span.close {
+	    position: absolute;
+	    right: 30px;
+		top: 30px;
+	    display: block;
+	    cursor: pointer;
+	}
+
+	header nav a.btn-azul_pd.login {
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+
+	header nav a.btn-azul_pd.contacto {
+		margin: 0 auto;
+		display: inline-block;
+	}
+
+	nav div {
+		display: flex;
+		flex-direction: column;
+	}
+
+	div.poup-empresas .container,
+	div.poup-colaboradores .container {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	div.poup-empresas h3,
+	div.poup-colaboradores h3 {
+		font-size: 2rem;
+	}
+
+	div.poup-empresas p,
+	div.poup-colaboradores p {
+		font-size: 14px;
+	}
+
+
+	/* SECTION 1 */
+
+	section.quepago {
+		margin-bottom: 200px;
+	}
+
+	section.quepago .container {
+		flex-direction: column;
+	}
+
+	section.quepago .container figure.background-pd_blue {
+		width: 100%;
+	}
+
+	section.quepago .container div h3 {
+		text-align: center;
+	}
+
+	section.quepago .container div {
+		width: 100%;
+		margin-bottom: 80px;
+		padding-left: 0;
+	}
+
+	section.quepago .container div h2 {
+		text-align: center;
+		font-size: 20px;
+		letter-spacing: 5px;
+		line-height: 30px;
+	}
+
+	section.quepago .container div p {
+		font-size: 16px;
+		text-align: center;
+	}
+
+	section.quepago .container div p br {
+		display: none;
+	}
+
+	section.quepago .container figure.diario-home {
+		width: 100%;
+	}
+
+	section.quepago .container div button.empresa {
+		margin-right: 0;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+
+	section.quepago .container div button {
+		display: block;
+		margin: 0 auto;
+	}
+
+
+	/* SECTION 2 */
+
+	section.section-funcionamiento {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	section.section-funcionamiento .container-funcionamiento {
+		flex-direction: column;
+		position: relative;
+		top: 0px;
+	}
+
+	section.section-funcionamiento .container-funcionamiento figure {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	section.section-funcionamiento .container-funcionamiento > div {
+		width: 100%;
+		position: sticky;
+		top: 10px;
+	}
+
+	section.section-funcionamiento .container .container-funcionamiento p {
+		font-size: 15px;
+	}
+
+	section.section-funcionamiento .container-funcionamiento figure img.last {
+		width: 80px;
+		left: 70%;
+		top: 35%;
+	}
+
+	section.section-funcionamiento .container-funcionamiento div button {
+		width: 100%;
+		font-size: 15px;
+		letter-spacing: 0;
+	}
+
+	section.section-funcionamiento .container-funcionamiento div div.last,
+	section.section-funcionamiento .container-funcionamiento div div.first {
+		padding-right: 0;
+		padding-top: 0;
+	}
+
+	section.section-funcionamiento .container-funcionamiento div button,
+	section.section-funcionamiento .container-funcionamiento div a {
+		width: 100%;
+	}
+
+	.contaiter-parallax {
+		height: 300px;
+	}
+
+	.f_uera {
+		display: none;
+	}
+
+	.d_entro {
+		display: block;
+	}
+
+	section.section-funcionamiento .container-funcionamiento figure img {
+		left: -30px;
+	}
+
+	section.section-funcionamiento .container-funcionamiento div h3 {
+		text-align: center;
+		font-size: 22px;
+	}
+
+
+	/* SECTION on deman */
+
+	section.section-ondemand .container {
+		flex-direction: column;
+	}
+
+	section.section-ondemand {
+		margin-bottom: 200px;
+	}
+
+	section.section-ondemand .container div.on-demand-texto {
+		width: 100%;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 50px;
+	}
+
+	section.section-ondemand .container div.on-demand-texto h2 br {
+		display: none;
+	}
+
+	section.section-ondemand .container div.on-demand-texto p.texto-tendencia {
+		font-size: 18px;
+		letter-spacing: 4px;
+	}
+
+	section.section-ondemand .container div.on-demand-texto p {
+		font-size: 16px;
+		padding-right: 0;
+	}
+
+	section.section-ondemand .container div.on-demand-texto h2 {
+		font-size: 30px;
+		letter-spacing: 8px;
+		line-height: 50px;
+	}
+
+	section.section-ondemand .container div.on-demand-imgs {
+		width: 100%;
+	}
+
+	section.section-ondemand .container div.on-demand-imgs figure.img-01 {
+		position: relative;
+		top: 0;
+	}
+
+	section.section-ondemand .container div.on-demand-imgs figure.img-02 {
+		position: relative;
+		top: -146px;
+	}
+
+	section.section-ondemand .container div.on-demand-imgs figure.img-03 {
+		position: absolute;
+		top: 45%;
+		transform: none;
+		width: 65%;
+	}
+
+
+
+
+	/* SECTION 3 */
+
+	section.section-testimonios {
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-bottom: 200px;
+	}
+
+	section.section-testimonios .container {
+		flex-direction: column;
+	}
+
+	section.section-testimonios .container .titulo-testimonios {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	section.section-testimonios .container .titulo-testimonios h2 {
+		font-size: 25px;
+		text-align: center;
+		letter-spacing: 8px;
+	}
+
+	section.section-testimonios .container .slider-testimonios {
+		width: 100%;
+		margin-bottom: 100px;
+	}
+
+	section.section-testimonios .container > p {
+		font-size: 16px;
+		line-height: 30px;
+		text-align: center;
+	}
+
+
+	section.section-testimonios .slider-testimonios .container-card .card-titulo:nth-child(2n+1) {
+		margin-right: 0;
+	}
+
+
+	/* SECTION 5 */
+
+	section.beneficios-empresas {
+		padding-right: 20px;
+		padding-left: 20px;
+		margin-bottom: 200px;
+	}
+
+	section.beneficios-empresas .container h2 {
+		font-size: 25px;
+		letter-spacing: 8px;
+	}
+
+	section.beneficios-empresas .container .container-beneficiosemp {
+		flex-direction: column;
+	}
+
+	section.beneficios-empresas .container .container-beneficiosemp figure {
+		width: 100%;
+	}
+
+	section.beneficios-empresas .container .container-beneficiosemp div {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	section.beneficios-empresas .container .container-beneficiosemp div p {
+		font-size: 16px;
+	}
+
+	section.beneficios-empresas .container .container-beneficiosemp div button {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 35px;
+		width: 100%;
+		font-size: 15px;
+	}
+
+
+	/* SECTION 6 */
+
+	section.beneficios-colab {
+		padding-right: 20px;
+		padding-left: 20px;
+		margin-bottom: 200px;
+	}
+
+	section.beneficios-colab .container h2 {
+		font-size: 25px;
+		letter-spacing: 8px;
+	}
+
+	section.beneficios-colab .container .container-beneficioscolab {
+		flex-direction: column-reverse;
+	}
+
+	section.beneficios-colab .container .container-beneficioscolab div {
+		width: 100%;
+		padding-left: 0;
+	}
+
+	section.beneficios-colab .container .container-beneficioscolab figure {
+		width: 100%;
+	}
+
+	section.beneficios-colab .container .container-beneficioscolab div p {
+		font-size: 16px;
+	}
+
+	section.beneficios-colab .container .container-beneficioscolab div button {
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		font-size: 15px;
+	}
+
+
+	/* FOOTER */
+
+	footer {
+		padding-bottom: 0;
+	}
+
+	footer .footercontainer {
+		flex-direction: column;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	footer .container-infopg {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 0;
+	}
+
+	footer .container-infocontacto {
+		width: 100%;
+		margin-bottom: 0;
+	}
+
+	footer .container-infocontacto div {
+		padding: 0;
+		justify-content: center;
+		align-items: center;
+	}
+
+	footer .container-infopg p {
+		font-size: 16px;
+		text-align: center;
+	}
+
+	footer .container-infocontacto div p a.activo-icon {
+		font-size: 18px;
+	}
+
+	footer .container-infopg .icons-social {
+		padding-right: 0;
+	}
+
+	footer .container-infopg .icons-social figure.m-b {
+		margin-right: 30px;
+	}
+
+
+	footer .img-celular {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	footer .img-celular figure {
+		position: relative;
+		top: 0;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	footer .btn-plat_footer {
+		display: block;
+		margin-bottom: 60px;
+	}
+
+	footer .container-infocontacto {
+		padding: 0;
+	}
+
+	footer .container-infocontacto svg {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 0px;
+		margin-bottom: 40px;
+		padding-right: 50px;
+		padding-left: 0;
+	}
+
+	footer .container-infocontacto div p {
+		text-align: center;
+	}
+
+	.slide-desktop {
+		display: none !important;
+	}
+
+	.slide-mobile {
+		display: block !important;
+	}
+
+}
+
+
+@media only screen and (max-width: 320px) {
+
+}
+
+
