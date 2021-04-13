@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
-    <link rel="stylesheet" type="text/css" href="./assets/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="./assets/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="./assets/css/styles.css?v=time()" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/slick/slick.css?v=time()">
+    <link rel="stylesheet" type="text/css" href="./assets/slick/slick-theme.css?v=time()">
     <meta name="description" content="la app de salario on-demand que te permite
 disponer del salario ya trabajado de forma inmediata,
 con una comisión fija.">
@@ -204,25 +205,23 @@ con una comisión fija.">
             </div>
             <figure class="horizon diario-home" data-animate-in="preset:slideInRightShort;duration:1000ms;" data-threshold="0.6">
                 <img src="./assets/img/pago-diario_home.png">
-                <!-- IMAGEN 1 -->
             </figure>
         </div>
     </section>
 
-    <section class="section-funcionamiento" id="funciona">
+    <section class="section-funcionamiento horizon" id="" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:100ms;" data-threshold="0.6">
         <div class="container flex">
-            <div class="container-funcionamiento">
-                <figure class="horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;" data-threshold="0.6">
+            <div class="container-funcionamiento centrar-f ">
+                <!-- <figure class="horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;" data-threshold="0.6">
                     <img src="./assets/img/scroll.png">
-                    <!-- IMAGEN 2 -->
                     <img src="./assets/img/play.png" class="last">
-                </figure>
-                <div data-animate-in="preset:slideInUpShort;duration:1000ms;delay:300ms;" data-threshold="0.6">
-                    <div class="first">
-                        <h3>El nuevo beneficio empresarial<br> que te hará ahorrar miles en rotación</h3>
-                        <p>Pago Diario, la app de salario on-demand que te permite<br> disponer del salario ya trabajado de forma inmediata,
-                            <br> con una comisión fija. </p>
-                        <p> <strong> Disminuye la rotación en tu empresa y muéstrate<br> como una empresa innovadora con inversión
+                </figure> -->
+                <div class="row w-100 centrar-f2">
+                    <div class="col-lg-6 col-md-6 col-12 centrar p-lg-5 p-md-3 p-0">
+                        <h3>El nuevo beneficio empresarial que te hará ahorrar miles en rotación</h3>
+                        <p class="justify">Pago Diario, la app de salario on-demand que te permite disponer del salario ya trabajado de forma inmediata, con una comisión fija. </p>
+                        <p class="justify mt-2"> <strong> Disminuye la rotación en tu empresa y muéstrate como una
+                  empresa innovadora con inversión
                 </strong> </p>
                         <br>
 
@@ -235,36 +234,31 @@ con una comisión fija.">
                         <a href="#ondemand"> Más beneficios </a>
                     </div>
 
-                    <div class="last">
+                    <div class="col-lg-6 col-md-6 col-12 centrar mt-lg-0 mt-md-0 mt-5 p-lg-5 p-md-3 p-0">
                         <h3>¿Como funciona?</h3>
-                        <p>Con Pago Diario tus colaboradores podrán retirar<br> el monto correspondiente a sus días ya trabajados
-                            <br> de forma inmediata, 24/7. </p>
+                        <p class="justify">Con Pago Diario tus colaboradores podrán retirar el monto correspondiente a sus días ya trabajados de forma inmediata, 24/7. </p>
 
                         <p>1. Descarga de app y registro</p>
                         <p>2. Disposición de salario trabajado</p>
-                        <p>3. Recepción de dinero de forma <br>inmediata en la cuenta de nómina</p>
+                        <p>3. Recepción de dinero de forma inmediata en la cuenta de nómina</p>
 
                         <button class="empresa"> Implemente este beneficio en tu empresa </button>
                     </div>
                 </div>
-
-                <div class="contaiter-parallax d_entro"></div>
-
             </div>
-            <div class="contaiter-parallax f_uera"></div>
         </div>
     </section>
 
     <section class="section-ondemand" id="ondemand">
         <div class="container flex">
             <div class="on-demand-texto horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:100ms;" data-threshold="0.6">
-                <h2>Salario <br>on demand </h2>
-                <p class="texto-tendencia">como tendencia mundial</p>
+                <h2 class="center-movil">Salario <br>on demand </h2>
+                <p class="texto-tendencia center-movil">como tendencia mundial</p>
                 <hr>
-                <p class="first">
+                <p class="first justify">
                     Se le llama <strong>salario On- Demand</strong> a la aplicación que permite a los empleados retirar su sueldo ya trabajado antes de su fecha de pago, sin trámites forzosos y con una comisión mínima, solo con una comisión.
                 </p>
-                <p>
+                <p class="justify">
                     Sabías que está tendencia tiene poco más de 70 años pero recientemente Walmart EUA es el caso de éxito más conocido en el mundo, ya que llegó a 1.5 millones de colaboradores y fue adoptado por el 50%, mejorando su rendimiento y considerándose una de las
                     prestaciones más importantes de su esquema.
                 </p>
@@ -283,7 +277,7 @@ con una comisión fija.">
         </div>
     </section>
 
-    <section class="section-testimonios" id="testimonios">
+    <!-- <section class="section-testimonios" id="testimonios">
         <div class="container flex">
             <div class="titulo-testimonios horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:300ms;" data-threshold="0.6">
                 <h2>Nuestros testimonios</h2>
@@ -294,8 +288,7 @@ con una comisión fija.">
                         <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
                         <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
                         <figure>
-                            <img src="./assets/img/logo-azlo.png">
-                            <!-- IMAGEN 1 CARDS RESPONSIVO -->
+                            <img src="./assets/img/logo-azlo.png">                            
                         </figure>
                     </div>
                 </div>
@@ -304,8 +297,7 @@ con una comisión fija.">
                         <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
                         <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
                         <figure>
-                            <img src="./assets/img/pae-logo.png">
-                            <!-- IMAGEN 2 CARDS RESPONSIVO -->
+                            <img src="./assets/img/pae-logo.png">                        
                         </figure>
                     </div>
                 </div>
@@ -314,8 +306,7 @@ con una comisión fija.">
                         <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
                         <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
                         <figure>
-                            <img src="./assets/img/rabbit-logo.png">
-                            <!-- IMAGEN 3 CARDS RESPONSIVO -->
+                            <img src="./assets/img/rabbit-logo.png">                            
                         </figure>
                     </div>
                 </div>
@@ -324,8 +315,7 @@ con una comisión fija.">
                         <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
                         <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
                         <figure>
-                            <img src="./assets/img/m-logo.png">
-                            <!-- IMAGEN 4 CARDS RESPONSIVO -->
+                            <img src="./assets/img/m-logo.png">                         
                         </figure>
                     </div>
                 </div>
@@ -335,8 +325,7 @@ con una comisión fija.">
                         <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
                         <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
                         <figure>
-                            <img src="./assets/img/logo-azlo.png">
-                            <!-- IMAGEN 5 CARDS RESPONSIVO -->
+                            <img src="./assets/img/logo-azlo.png">                            
                         </figure>
                     </div>
                 </div>
@@ -345,8 +334,7 @@ con una comisión fija.">
                         <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
                         <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
                         <figure>
-                            <img src="./assets/img/pae-logo.png">
-                            <!-- IMAGEN 6 CARDS RESPONSIVO -->
+                            <img src="./assets/img/pae-logo.png">                            
                         </figure>
                     </div>
                 </div>
@@ -355,8 +343,7 @@ con una comisión fija.">
                         <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
                         <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
                         <figure>
-                            <img src="./assets/img/rabbit-logo.png">
-                            <!-- IMAGEN 7 CARDS RESPONSIVO -->
+                            <img src="./assets/img/rabbit-logo.png">                            
                         </figure>
                     </div>
                 </div>
@@ -365,8 +352,7 @@ con una comisión fija.">
                         <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
                         <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
                         <figure>
-                            <img src="./assets/img/m-logo.png">
-                            <!-- IMAGEN 8 CARDS RESPONSIVO -->
+                            <img src="./assets/img/m-logo.png">                            
                         </figure>
                     </div>
                 </div>
@@ -378,32 +364,28 @@ con una comisión fija.">
                         <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
                         <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
                         <figure>
-                            <img src="./assets/img/logo-azlo.png">
-                            <!-- IMAGEN 1 CARDS ESCRITORIO -->
+                            <img src="./assets/img/logo-azlo.png">                            
                         </figure>
                     </div>
                     <div class="card-titulo">
                         <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
                         <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
                         <figure>
-                            <img src="./assets/img/pae-logo.png">
-                            <!-- IMAGEN 2 CARDS ESCRITORIO -->
+                            <img src="./assets/img/pae-logo.png">                            
                         </figure>
                     </div>
                     <div class="card-titulo">
                         <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
                         <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
                         <figure>
-                            <img src="./assets/img/rabbit-logo.png">
-                            <!-- IMAGEN 3 CARDS ESCRITORIO -->
+                            <img src="./assets/img/rabbit-logo.png">                            
                         </figure>
                     </div>
                     <div class="card-titulo">
                         <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
                         <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
                         <figure>
-                            <img src="./assets/img/m-logo.png">
-                            <!-- IMAGEN 4 CARDS ESCRITORIO -->
+                            <img src="./assets/img/m-logo.png">                            
                         </figure>
                     </div>
                 </div>
@@ -412,32 +394,28 @@ con una comisión fija.">
                         <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
                         <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
                         <figure>
-                            <img src="./assets/img/logo-azlo.png">
-                            <!-- IMAGEN 5 CARDS ESCRITORIO -->
+                            <img src="./assets/img/logo-azlo.png">                            
                         </figure>
                     </div>
                     <div class="card-titulo">
                         <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
                         <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
                         <figure>
-                            <img src="./assets/img/pae-logo.png">
-                            <!-- IMAGEN 6 CARDS ESCRITORIO -->
+                            <img src="./assets/img/pae-logo.png">                            
                         </figure>
                     </div>
                     <div class="card-titulo">
                         <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
                         <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
                         <figure>
-                            <img src="./assets/img/rabbit-logo.png">
-                            <!-- IMAGEN 7 CARDS ESCRITORIO -->
+                            <img src="./assets/img/rabbit-logo.png">                            
                         </figure>
                     </div>
                     <div class="card-titulo">
                         <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
                         <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
                         <figure>
-                            <img src="./assets/img/m-logo.png">
-                            <!-- IMAGEN 8 CARDS ESCRITORIO -->
+                            <img src="./assets/img/m-logo.png">                            
                         </figure>
                     </div>
                 </div>
@@ -446,7 +424,7 @@ con una comisión fija.">
             <p class="horizon empresa" data-animate-in="preset:slideInRightShort;duration:1000ms;" data-threshold="0.6">
                 ¿Como puedo obtener este beneficio para mi empresa?</p>
         </div>
-    </section>
+    </section> -->
     <section class="beneficios-empresas" id="empresas">
         <div class="container flex">
             <h2 class="horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:300ms;" data-threshold="0.6">
@@ -459,17 +437,17 @@ con una comisión fija.">
                 </figure>
                 <div class="horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:300ms;" data-threshold="0.6">
 
-                    <p>Inversión financiera de $0 para empresa, sin riesgos. </p>
+                    <p class="justify">Inversión financiera de $0 para empresa, sin riesgos. </p>
 
-                    <p>Nos ajustamos a los formatos, procesos y/o softwares de nómina de tu empresa.</p>
+                    <p class="justify">Nos ajustamos a los formatos, procesos y/o softwares de nómina de tu empresa.</p>
 
-                    <p>Seguimiento sencillo y práctico a través de panel de administración.</p>
+                    <p class="justify">Seguimiento sencillo y práctico a través de panel de administración.</p>
 
-                    <p>Muéstrate como una empresa innovadora y tecnológica. </p>
+                    <p class="justify">Muéstrate como una empresa innovadora y tecnológica. </p>
 
-                    <p>Atrae al talento hacia ti: fortalece tu competitividad corporativa.</p>
+                    <p class="justify">Atrae al talento hacia ti: fortalece tu competitividad corporativa.</p>
 
-                    <p>Reduce el estrés y brinda estabilidad financiera a colaboradores.</p>
+                    <p class="justify">Reduce el estrés y brinda estabilidad financiera a colaboradores.</p>
 
                     <button class="empresa"> Consiguelo sin costo </button>
                 </div>
@@ -483,15 +461,15 @@ con una comisión fija.">
             <div class="container-beneficioscolab">
                 <div class="horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:300ms;" data-threshold="0.6">
 
-                    <p>Acceso a tu nómina 24/7, sobre días laborados.</p>
+                    <p class="justify">Acceso a tu nómina 24/7, sobre días laborados.</p>
 
-                    <p>Sin procesos y sin aprobaciones.</p>
+                    <p class="justify">Sin procesos y sin aprobaciones.</p>
 
-                    <p>Movimientos verificados y avalados por empresa de origen.</p>
+                    <p class="justify">Movimientos verificados y avalados por empresa de origen.</p>
 
-                    <p>Estabilidad financiera.</p>
+                    <p class="justify">Estabilidad financiera.</p>
 
-                    <p>Comisión más baja que una entidad bancaria.</p>
+                    <p class="justify">Comisión más baja que una entidad bancaria.</p>
 
 
                     <button class="empleado"> Lo quiero en mi empresa </button>
@@ -554,30 +532,26 @@ con una comisión fija.">
               </g>
             </g>
           </svg>
-                <div>
-                    <p>
+                <div class="d-block">
+                    <p class="text-left">
                         <i class="fal fa-map-marker-alt fa-2x"></i>
                         <a href="https://www.google.com.mx/maps/place/Palo+Santo+16,+Lomas+Altas,+Miguel+Hidalgo,+11950+Ciudad+de+M%C3%A9xico,+CDMX/@19.3965293,-99.2298072,17z/data=!3m1!4b1!4m5!3m4!1s0x85d201a43412642f:0xae46429d38dc91a0!8m2!3d19.3965293!4d-99.2276185" class="activo-icon"
                             target="_blank"> Palo Santo 16 Col Lomas Altas <a />
             </p>
-            <p>
+            <p class="text-left">
               <i class="fal fa-phone-alt fa-2x"></i> <a href="tel:+525575868002" target="_blank" class="activo-icon">
                 (55) 7586 8002 </a>
                     </p>
-                    <p>
+                    <p class="text-left">
                         <i class="fab fa-whatsapp fa-2x"></i> <a href="https://api.whatsapp.com/send?phone=+525536782904" target="_blank" class="activo-icon"> (55)3678 2904 </a>
                     </p>
-                    <p>
+                    <p class="text-left">
                         <i class="fal fa-envelope fa-2x"></i> <a href="mailto:contacto@tupagodiario.com" target="_blank" class="activo-icon"> contacto@tupagodiario.com </a>
                     </p>
 
 
-                    <p>Terminos y condiciones de uso</p>
-                    <p>Pago Diario es un producto de Productos para Empleados SAPI de CV</p>
-
-                    <p>Primera linea</p>
-                    <p>Segunda linea</p>
-                    <p>Tercera linea</p>
+                    <p class="text-left">Terminos y condiciones de uso</p>
+                    <p class="text-left">Pago Diario es un producto de Productos para Empleados SAPI de CV</p>
 
                 </div>
             </div>
@@ -621,9 +595,12 @@ con una comisión fija.">
     </footer>
 
     <script type="text/javascript" src="./assets/js/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="./assets/slick/slick.js"></script>
-    <script type="text/javascript" src="./assets/js/main.js"></script>
-    <script type="text/javascript" src="./assets/js/timber.master.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+
+    <script type="text/javascript" src="./assets/slick/slick.js?v=time()"></script>
+    <script type="text/javascript" src="./assets/js/main.js?v=time()"></script>
+    <script type="text/javascript" src="./assets/js/timber.master.min.js?v=time()"></script>
     <script type="text/javascript">
         var travel;
         var scrollPos = 0;
