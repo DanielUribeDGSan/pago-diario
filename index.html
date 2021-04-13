@@ -1,646 +1,667 @@
 <!DOCTYPE html>
-<html>
+<h tml>
 
-<head>
-    <title>Pago Diario</title>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="./assets/img/favicon.png">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link href="./assets/css/styles.css?v=time()" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./assets/slick/slick.css?v=time()">
-    <link rel="stylesheet" type="text/css" href="./assets/slick/slick-theme.css?v=time()">
-    <meta name="description" content="la app de salario on-demand que te permite
+    <h ead>
+        <title>Pago Diario</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="./assets/img/favicon.png">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link href="./assets/css/styles.css?v=time()" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./assets/slick/slick.css?v=time()">
+        <link rel="stylesheet" type="text/css" href="./assets/slick/slick-theme.css?v=time()">
+        <meta name="description" content="la app de salario on-demand que te permite
 disponer del salario ya trabajado de forma inmediata,
 con una comisión fija.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H1XWPTV4KZ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-H1XWPTV4KZ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
 
-        gtag('config', 'G-H1XWPTV4KZ');
-    </script>
+            gtag('config', 'G-H1XWPTV4KZ');
+        </script>
 
 
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-PG498BV');
-    </script>
-    <!-- End Google Tag Manager -->
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PG498BV" height="0" width="0"
+        <!-- Google Tag Manager -->
+        <script>
+            (function(w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-PG498BV');
+        </script>
+        <!-- End Google Tag Manager -->
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PG498BV" height="0" width="0"
         style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+        <!-- End Google Tag Manager (noscript) -->
 
 
-    <!-- Hotjar Tracking Code for https://www.tupagodiario.com/ -->
-    <script>
-        (function(h, o, t, j, a, r) {
-            h.hj = h.hj || function() {
-                (h.hj.q = h.hj.q || []).push(arguments)
-            };
-            h._hjSettings = {
-                hjid: 2338033,
-                hjsv: 6
-            };
-            a = o.getElementsByTagName('head')[0];
-            r = o.createElement('script');
-            r.async = 1;
-            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-    </script>
+        <!-- Hotjar Tracking Code for https://www.tupagodiario.com/ -->
+        <script>
+            (function(h, o, t, j, a, r) {
+                h.hj = h.hj || function() {
+                    (h.hj.q = h.hj.q || []).push(arguments)
+                };
+                h._hjSettings = {
+                    hjid: 2338033,
+                    hjsv: 6
+                };
+                a = o.getElementsByTagName('head')[0];
+                r = o.createElement('script');
+                r.async = 1;
+                r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+        </script>
 
-</head>
+        </head>
 
-<body>
-    <header>
-        <div class="container flex">
-            <a href="index.html">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 717.73 179.51">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill: #c6c6c6;
-                }
+        <body>
+            <header>
+                <div class="container flex">
+                    <a href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 717.73 179.51">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #c6c6c6;
+                  }
 
-                .cls-2 {
-                  fill: #fff;
-                }
-              </style>
-            </defs>
-            <g id="Layer_2" data-name="Layer 2">
-              <g id="Layer_1-2" data-name="Layer 1">
-                <path class="cls-1"
-                  d="M130.72,78.66c-5-18.33-19.92-31.82-37.59-34C71.4,41.89,53.39,57.19,46.53,73.46,39.24,90.78,45.4,107.23,48,114.19c8.26,22,25.92,32.24,31.32,35.06a65.68,65.68,0,0,0,37.57,7A65,65,0,0,0,156.67,137a67.85,67.85,0,0,0,18.24-39,89.87,89.87,0,0,1-15.29,43.74,88.81,88.81,0,0,1-38.49,31.11,86.3,86.3,0,0,1-36.84,6.6c-36.89-1.72-59.7-27.53-62.44-30.73C17.06,143.09-1.64,120.54.12,88.17c.42-7.81,1.76-27.34,16.57-44.31C18.53,41.76,38,20.25,68.26,21.62c24.72,1.11,47.11,17,58.21,40.91Z" />
-                <path class="cls-2"
-                  d="M44.33,101.36c.75-.34,3.8,16,17.13,26a43.18,43.18,0,0,0,37.76,6.41c1.72-.51,19.26-6,27.63-24.13,4.69-10.12,4.23-19.28,3.86-25.26a68.14,68.14,0,0,0-15.84-39C94.08,21.12,64.08,22.08,62.2,22.17,30.26,23.74,12.92,48.9,10.26,52.9A70.27,70.27,0,0,0,.13,77.22C5,44.56,26.2,17,55.75,5.58c30.32-11.75,60.94-3.31,80.49,10.18a91,91,0,0,1,25.42,27.15,84.44,84.44,0,0,1,12.89,38.46c.58,7.8,2.19,29.77-12.52,49.59-12,16.11-28.1,22-36.1,24.13a65.55,65.55,0,0,1-36.1-.76C69.75,148,59.1,133.64,55.94,129.26,46.16,115.71,43.63,101.66,44.33,101.36Z" />
-                <path class="cls-2"
-                  d="M210.19,136.8V67.34h8.22v8.72h.1q6-9.32,17.57-9.32A22.57,22.57,0,0,1,253.34,74q6.79,7.29,6.8,18.35t-6.85,18a23.18,23.18,0,0,1-17.21,6.94q-11.69,0-17.57-9.12h-.1V136.8Zm24.77-27a16,16,0,0,0,12.14-5,17.42,17.42,0,0,0,4.72-12.47q0-8-4.88-13.08a16.07,16.07,0,0,0-12.08-5.07,15.6,15.6,0,0,0-12.13,5.22A18.55,18.55,0,0,0,218,92.39,17,17,0,0,0,222.88,105,16.41,16.41,0,0,0,235,109.83Z" />
-                <path class="cls-2"
-                  d="M293.35,117.33a23.15,23.15,0,0,1-17.21-6.94q-6.86-6.94-6.86-18T276.08,74a22.57,22.57,0,0,1,17.27-7.3,20.67,20.67,0,0,1,10,2.48,18.53,18.53,0,0,1,7.21,7l.2-.11V67.34H319v49.39h-7.92V107.8H311Q305.22,117.34,293.35,117.33Zm1.21-7.5A15.83,15.83,0,0,0,306.34,105a17.18,17.18,0,0,0,4.77-12.57,18.65,18.65,0,0,0-4.67-12.93,15.23,15.23,0,0,0-11.88-5.22,16.09,16.09,0,0,0-12.08,5.07q-4.87,5.07-4.87,13.08a17.37,17.37,0,0,0,4.72,12.47A16.12,16.12,0,0,0,294.56,109.83Z" />
-                <path class="cls-2"
-                  d="M355.69,137.41A38.29,38.29,0,0,1,335.58,132l2-7.3a35.72,35.72,0,0,0,17.77,5.17q8,0,12.29-4.11a14.19,14.19,0,0,0,4.26-10.7v-7.91h-.2q-6,8.63-17.16,8.62A23.32,23.32,0,0,1,337.46,109q-6.85-6.8-6.85-17.64,0-10.65,6.65-17.65t17-7q11.06,0,17.36,8.51h.2V67.34h8.23v45.73q0,11.27-6,17.8T355.69,137.41Zm-.1-29.2a15.66,15.66,0,0,0,12-4.87A17.38,17.38,0,0,0,372.14,91,16.81,16.81,0,0,0,343.6,79.11a16.53,16.53,0,0,0-4.67,12.06q0,7.71,4.73,12.37A16.26,16.26,0,0,0,355.59,108.21Z" />
-                <path class="cls-2"
-                  d="M417.22,117.33q-11.37,0-18.48-7.2a24.62,24.62,0,0,1-7.11-18A24.79,24.79,0,0,1,398.74,74q7.11-7.26,18.48-7.25,11.05,0,18.27,7.09t7.21,18.25q0,11.16-7.21,18.21T417.22,117.33Zm0-7.5a16.42,16.42,0,0,0,12.13-5,17.39,17.39,0,0,0,4.93-12.78,17.55,17.55,0,0,0-4.93-12.82,16.31,16.31,0,0,0-12.13-5,16.07,16.07,0,0,0-12.39,5.17,18,18,0,0,0-4.77,12.67,17.69,17.69,0,0,0,4.82,12.63A16.21,16.21,0,0,0,417.22,109.83Z" />
-                <path class="cls-2"
-                  d="M481.66,117.33a23.46,23.46,0,0,1-17.36-6.94q-6.9-6.94-6.91-18t6.91-18.3a22.7,22.7,0,0,1,17.26-7.35q11.78,0,17.67,9.43h.1V42.1h8.22v74.63h-7.92V107.6h-.1Q493.74,117.34,481.66,117.33Zm1.12-7.5a16.28,16.28,0,0,0,12-4.87,17,17,0,0,0,4.87-12.57,18.55,18.55,0,0,0-4.72-12.93,15.51,15.51,0,0,0-12-5.22,16.23,16.23,0,0,0-12.13,5.07q-4.94,5.07-4.93,13.08a17.42,17.42,0,0,0,4.72,12.47A16.14,16.14,0,0,0,482.78,109.83Z" />
-                <path class="cls-2"
-                  d="M531.92,56.6a6.15,6.15,0,0,1-8.53,0,5.89,5.89,0,0,1,0-8.32,6.15,6.15,0,0,1,8.53,0,5.87,5.87,0,0,1,0,8.32Zm-8.43,60.13V67.34h8.23v49.39Z" />
-                <path class="cls-2"
-                  d="M568.58,117.33a23.15,23.15,0,0,1-17.21-6.94q-6.86-6.94-6.86-18T551.31,74a22.57,22.57,0,0,1,17.27-7.3,20.67,20.67,0,0,1,10,2.48,18.53,18.53,0,0,1,7.21,7l.2-.11V67.34h8.22v49.39h-7.92V107.8h-.1Q580.45,117.34,568.58,117.33Zm1.21-7.5A15.83,15.83,0,0,0,581.57,105a17.18,17.18,0,0,0,4.77-12.57,18.65,18.65,0,0,0-4.67-12.93,15.23,15.23,0,0,0-11.88-5.22,16.09,16.09,0,0,0-12.08,5.07q-4.87,5.07-4.87,13.08a17.37,17.37,0,0,0,4.72,12.47A16.12,16.12,0,0,0,569.79,109.83Z" />
-                <path class="cls-2"
-                  d="M609.09,116.73V67.34h8.22v9h.21q5.68-9.63,16-9.63a15.06,15.06,0,0,1,2,.1V76c-1.63-.13-2.71-.2-3.25-.2a13.68,13.68,0,0,0-11,4.77q-4.05,4.75-4.06,12.37v23.83Z" />
-                <path class="cls-2"
-                  d="M654,56.6a6.15,6.15,0,0,1-8.53,0,5.87,5.87,0,0,1,0-8.32,6.15,6.15,0,0,1,8.53,0,5.89,5.89,0,0,1,0,8.32Zm-8.43,60.13V67.34h8.22v49.39Z" />
-                <path class="cls-2"
-                  d="M692.24,117.33q-11.37,0-18.47-7.2a24.62,24.62,0,0,1-7.11-18A24.79,24.79,0,0,1,673.77,74q7.1-7.26,18.47-7.25,11.07,0,18.28,7.09t7.21,18.25q0,11.16-7.21,18.21T692.24,117.33Zm0-7.5a16.44,16.44,0,0,0,12.14-5,17.38,17.38,0,0,0,4.92-12.78,17.54,17.54,0,0,0-4.92-12.82,16.34,16.34,0,0,0-12.14-5,16.06,16.06,0,0,0-12.38,5.17,18,18,0,0,0-4.77,12.67,17.69,17.69,0,0,0,4.82,12.63A16.19,16.19,0,0,0,692.24,109.83Z" />
+                  .cls-2 {
+                    fill: #fff;
+                  }
+                </style>
+              </defs>
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_1-2" data-name="Layer 1">
+                  <path class="cls-1"
+                    d="M130.72,78.66c-5-18.33-19.92-31.82-37.59-34C71.4,41.89,53.39,57.19,46.53,73.46,39.24,90.78,45.4,107.23,48,114.19c8.26,22,25.92,32.24,31.32,35.06a65.68,65.68,0,0,0,37.57,7A65,65,0,0,0,156.67,137a67.85,67.85,0,0,0,18.24-39,89.87,89.87,0,0,1-15.29,43.74,88.81,88.81,0,0,1-38.49,31.11,86.3,86.3,0,0,1-36.84,6.6c-36.89-1.72-59.7-27.53-62.44-30.73C17.06,143.09-1.64,120.54.12,88.17c.42-7.81,1.76-27.34,16.57-44.31C18.53,41.76,38,20.25,68.26,21.62c24.72,1.11,47.11,17,58.21,40.91Z" />
+                  <path class="cls-2"
+                    d="M44.33,101.36c.75-.34,3.8,16,17.13,26a43.18,43.18,0,0,0,37.76,6.41c1.72-.51,19.26-6,27.63-24.13,4.69-10.12,4.23-19.28,3.86-25.26a68.14,68.14,0,0,0-15.84-39C94.08,21.12,64.08,22.08,62.2,22.17,30.26,23.74,12.92,48.9,10.26,52.9A70.27,70.27,0,0,0,.13,77.22C5,44.56,26.2,17,55.75,5.58c30.32-11.75,60.94-3.31,80.49,10.18a91,91,0,0,1,25.42,27.15,84.44,84.44,0,0,1,12.89,38.46c.58,7.8,2.19,29.77-12.52,49.59-12,16.11-28.1,22-36.1,24.13a65.55,65.55,0,0,1-36.1-.76C69.75,148,59.1,133.64,55.94,129.26,46.16,115.71,43.63,101.66,44.33,101.36Z" />
+                  <path class="cls-2"
+                    d="M210.19,136.8V67.34h8.22v8.72h.1q6-9.32,17.57-9.32A22.57,22.57,0,0,1,253.34,74q6.79,7.29,6.8,18.35t-6.85,18a23.18,23.18,0,0,1-17.21,6.94q-11.69,0-17.57-9.12h-.1V136.8Zm24.77-27a16,16,0,0,0,12.14-5,17.42,17.42,0,0,0,4.72-12.47q0-8-4.88-13.08a16.07,16.07,0,0,0-12.08-5.07,15.6,15.6,0,0,0-12.13,5.22A18.55,18.55,0,0,0,218,92.39,17,17,0,0,0,222.88,105,16.41,16.41,0,0,0,235,109.83Z" />
+                  <path class="cls-2"
+                    d="M293.35,117.33a23.15,23.15,0,0,1-17.21-6.94q-6.86-6.94-6.86-18T276.08,74a22.57,22.57,0,0,1,17.27-7.3,20.67,20.67,0,0,1,10,2.48,18.53,18.53,0,0,1,7.21,7l.2-.11V67.34H319v49.39h-7.92V107.8H311Q305.22,117.34,293.35,117.33Zm1.21-7.5A15.83,15.83,0,0,0,306.34,105a17.18,17.18,0,0,0,4.77-12.57,18.65,18.65,0,0,0-4.67-12.93,15.23,15.23,0,0,0-11.88-5.22,16.09,16.09,0,0,0-12.08,5.07q-4.87,5.07-4.87,13.08a17.37,17.37,0,0,0,4.72,12.47A16.12,16.12,0,0,0,294.56,109.83Z" />
+                  <path class="cls-2"
+                    d="M355.69,137.41A38.29,38.29,0,0,1,335.58,132l2-7.3a35.72,35.72,0,0,0,17.77,5.17q8,0,12.29-4.11a14.19,14.19,0,0,0,4.26-10.7v-7.91h-.2q-6,8.63-17.16,8.62A23.32,23.32,0,0,1,337.46,109q-6.85-6.8-6.85-17.64,0-10.65,6.65-17.65t17-7q11.06,0,17.36,8.51h.2V67.34h8.23v45.73q0,11.27-6,17.8T355.69,137.41Zm-.1-29.2a15.66,15.66,0,0,0,12-4.87A17.38,17.38,0,0,0,372.14,91,16.81,16.81,0,0,0,343.6,79.11a16.53,16.53,0,0,0-4.67,12.06q0,7.71,4.73,12.37A16.26,16.26,0,0,0,355.59,108.21Z" />
+                  <path class="cls-2"
+                    d="M417.22,117.33q-11.37,0-18.48-7.2a24.62,24.62,0,0,1-7.11-18A24.79,24.79,0,0,1,398.74,74q7.11-7.26,18.48-7.25,11.05,0,18.27,7.09t7.21,18.25q0,11.16-7.21,18.21T417.22,117.33Zm0-7.5a16.42,16.42,0,0,0,12.13-5,17.39,17.39,0,0,0,4.93-12.78,17.55,17.55,0,0,0-4.93-12.82,16.31,16.31,0,0,0-12.13-5,16.07,16.07,0,0,0-12.39,5.17,18,18,0,0,0-4.77,12.67,17.69,17.69,0,0,0,4.82,12.63A16.21,16.21,0,0,0,417.22,109.83Z" />
+                  <path class="cls-2"
+                    d="M481.66,117.33a23.46,23.46,0,0,1-17.36-6.94q-6.9-6.94-6.91-18t6.91-18.3a22.7,22.7,0,0,1,17.26-7.35q11.78,0,17.67,9.43h.1V42.1h8.22v74.63h-7.92V107.6h-.1Q493.74,117.34,481.66,117.33Zm1.12-7.5a16.28,16.28,0,0,0,12-4.87,17,17,0,0,0,4.87-12.57,18.55,18.55,0,0,0-4.72-12.93,15.51,15.51,0,0,0-12-5.22,16.23,16.23,0,0,0-12.13,5.07q-4.94,5.07-4.93,13.08a17.42,17.42,0,0,0,4.72,12.47A16.14,16.14,0,0,0,482.78,109.83Z" />
+                  <path class="cls-2"
+                    d="M531.92,56.6a6.15,6.15,0,0,1-8.53,0,5.89,5.89,0,0,1,0-8.32,6.15,6.15,0,0,1,8.53,0,5.87,5.87,0,0,1,0,8.32Zm-8.43,60.13V67.34h8.23v49.39Z" />
+                  <path class="cls-2"
+                    d="M568.58,117.33a23.15,23.15,0,0,1-17.21-6.94q-6.86-6.94-6.86-18T551.31,74a22.57,22.57,0,0,1,17.27-7.3,20.67,20.67,0,0,1,10,2.48,18.53,18.53,0,0,1,7.21,7l.2-.11V67.34h8.22v49.39h-7.92V107.8h-.1Q580.45,117.34,568.58,117.33Zm1.21-7.5A15.83,15.83,0,0,0,581.57,105a17.18,17.18,0,0,0,4.77-12.57,18.65,18.65,0,0,0-4.67-12.93,15.23,15.23,0,0,0-11.88-5.22,16.09,16.09,0,0,0-12.08,5.07q-4.87,5.07-4.87,13.08a17.37,17.37,0,0,0,4.72,12.47A16.12,16.12,0,0,0,569.79,109.83Z" />
+                  <path class="cls-2"
+                    d="M609.09,116.73V67.34h8.22v9h.21q5.68-9.63,16-9.63a15.06,15.06,0,0,1,2,.1V76c-1.63-.13-2.71-.2-3.25-.2a13.68,13.68,0,0,0-11,4.77q-4.05,4.75-4.06,12.37v23.83Z" />
+                  <path class="cls-2"
+                    d="M654,56.6a6.15,6.15,0,0,1-8.53,0,5.87,5.87,0,0,1,0-8.32,6.15,6.15,0,0,1,8.53,0,5.89,5.89,0,0,1,0,8.32Zm-8.43,60.13V67.34h8.22v49.39Z" />
+                  <path class="cls-2"
+                    d="M692.24,117.33q-11.37,0-18.47-7.2a24.62,24.62,0,0,1-7.11-18A24.79,24.79,0,0,1,673.77,74q7.1-7.26,18.47-7.25,11.07,0,18.28,7.09t7.21,18.25q0,11.16-7.21,18.21T692.24,117.33Zm0-7.5a16.44,16.44,0,0,0,12.14-5,17.38,17.38,0,0,0,4.92-12.78,17.54,17.54,0,0,0-4.92-12.82,16.34,16.34,0,0,0-12.14-5,16.06,16.06,0,0,0-12.38,5.17,18,18,0,0,0-4.77,12.67,17.69,17.69,0,0,0,4.82,12.63A16.19,16.19,0,0,0,692.24,109.83Z" />
+                </g>
               </g>
-            </g>
-          </svg>
+            </svg>
 
-            </a>
-            <div class="burger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <nav>
-                <span class="close fa fa-times fa-3x"></span>
-                <div>
-                    <a href="#funciona"> Nosotros </a>
-                    <a href="#empresas"> Beneficios </a>
-                    <a href="#testimonios"> Clientes </a>
-                </div>
-                <div>
-                    <a href="#" class="btn-azul_pd login"> Login empresas </a>
-                    <a href="#" class="btn-azul_pd contacto"> Cita </a>
-                </div>
-            </nav>
-        </div>
-        <div class="poup-videoyt">
-            <div class="container flex">
-                <span class="close fa fa-times fa-2x"></span>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/K0etYke8T6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-
-        <div class="poup-empresas">
-            <div class="container flex">
-                <span class="close fa fa-times fa-2x"></span>
-                <h3>EMPRESAS</h3>
-                <p>Ayúdanos a que Pagodiario pueda llegar a tu empresa<br> poniéndonos en contacto con tu Departamento de<br> Recursos Humanos</p>
-
-                <form name="form_empresas">
-                    <input type="text" placeholder="Nombre completo*" name="nombre">
-                    <input type="text" placeholder="Correo de trabajo*" name="email">
-                    <input type="number" placeholder="Numero de telefono*" name="telefono">
-                    <input type="text" placeholder="Puesto*" name="puesto">
-                    <input type="number" placeholder="Numero de empleados*" name="empleados">
-                    <div>
-                        <input type="checkbox" id="check1" name="terminos">
-                        <label for="check1">Acepto</label>
-                        <button>Activar Pago diario</button>
+                    </a>
+                    <div class="burger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
                     </div>
-                </form>
-            </div>
-        </div>
-        <div class="poup-colaboradores">
-            <div class="container flex">
-                <span class="close fa fa-times fa-2x"></span>
-                <h3>COLABORADORES</h3>
-                <p>Ayúdanos a que Pagodiario pueda llegar a tu empresa<br> poniéndonos en contacto con tu Departamento de<br> Recursos Humanos</p>
-
-                <form name="form_empleados">
-                    <input type="text" placeholder="Nombre completo*" name="nombre">
-                    <input type="text" placeholder="Correo de R.H.*" name="email">
-                    <input type="text" placeholder="telefono de R.H.*" name="telefono">
-                    <div>
-                        <input type="checkbox" id="check2" name="terminos">
-                        <label for="check2">Acepto</label>
-                        <button>Activar Pago diario</button>
+                    <nav>
+                        <span class="close fa fa-times fa-3x"></span>
+                        <div>
+                            <a href="#funciona"> Nosotros </a>
+                            <a href="#empresas"> Beneficios </a>
+                            <a href="#testimonios"> Clientes </a>
+                        </div>
+                        <div>
+                            <a href="#" class="btn-azul_pd login"> Login empresas </a>
+                            <a href="#" class="btn-azul_pd contacto"> Cita </a>
+                        </div>
+                    </nav>
+                </div>
+                <div class="poup-videoyt">
+                    <div class="container flex">
+                        <span class="close fa fa-times fa-2x"></span>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/K0etYke8T6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                </form>
-            </div>
-        </div>
-    </header>
-    <section class="quepago">
-        <div class="container flex">
-            <figure class="background-pd_blue">
-                <img src="./assets/img/background-home.png">
-            </figure>
-            <div>
-                <h3>En Pago Diario</h3>
-                <h2 class="horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;" data-no-scale>¡Todos los días
-                    <br> son de pago!</h2>
-                <p class="horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;delay:200ms;" data-no-scale>
-                    Tu nómina disponible 24/7 <br> con nuestra modalidad <br> de <strong><a href="#ondemand">salario on
-                demand</a></strong> <br>
-                </p>
-                <button class="empresa horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:400ms;" data-no-scale> Soy representante de empresa </button>
-                <button class="noactive empleado horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:600ms;" data-no-scale> Soy colaborador de empresa </button>
-            </div>
-            <figure class="horizon diario-home" data-animate-in="preset:slideInRightShort;duration:1000ms;" data-threshold="0.6">
-                <img src="./assets/img/pago-diario_home.png">
-            </figure>
-        </div>
-    </section>
+                </div>
 
-    <section class="section-funcionamiento horizon" id="" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:100ms;" data-threshold="0.6">
-        <div class="container flex">
-            <div class="container-funcionamiento centrar-f ">
-                <!-- <figure class="horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;" data-threshold="0.6">
+                <div class="poup-empresas">
+                    <div class="container flex">
+                        <span class="close fa fa-times fa-2x"></span>
+                        <h3>EMPRESAS</h3>
+                        <p>Ayúdanos a que Pagodiario pueda llegar a tu empresa<br> poniéndonos en contacto con tu Departamento de
+                            <br> Recursos Humanos</p>
+
+                        <form name="form_empresas">
+                            <input type="text" placeholder="Nombre completo*" name="nombre">
+                            <input type="text" placeholder="Correo de trabajo*" name="email">
+                            <input type="number" placeholder="Numero de telefono*" name="telefono">
+                            <input type="text" placeholder="Puesto*" name="puesto">
+                            <input type="number" placeholder="Numero de empleados*" name="empleados">
+                            <div>
+                                <input type="checkbox" id="check1" name="terminos">
+                                <label for="check1"></label><label for="check1" class="check-acomodo"> Acepto terminos y
+                  condiciones</label>
+                                <button>Activar Pago diario</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="poup-colaboradores">
+                    <div class="container flex">
+                        <span class="close fa fa-times fa-2x"></span>
+                        <h3>COLABORADORES</h3>
+                        <p>Ayúdanos a que Pagodiario pueda llegar a tu empresa<br> poniéndonos en contacto con tu Departamento de
+                            <br> Recursos Humanos</p>
+
+                        <form name="form_empleados">
+                            <input type="text" placeholder="Nombre completo*" name="nombre">
+                            <input type="text" placeholder="Correo de R.H.*" name="email">
+                            <input type="text" placeholder="telefono de R.H.*" name="telefono">
+                            <div>
+                                <input type="checkbox" id="check2" name="terminos">
+                                <label for="check2"></label><label for="check2" class="check-acomodo"> Acepto terminos y
+                  condiciones</label>
+                                <button>Activar Pago diario</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </header>
+            <section class="quepago">
+                <div class="container flex">
+                    <figure class="background-pd_blue">
+                        <img src="./assets/img/background-home.png">
+                    </figure>
+                    <div>
+                        <h3>En Pago Diario</h3>
+                        <h2 class="horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;" data-no-scale>¡Todos los días
+                            <br> son de pago!</h2>
+                        <p class="horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;delay:200ms;" data-no-scale>
+                            Tu nómina disponible 24/7 <br> con nuestra modalidad <br> de <strong><a href="#ondemand">salario on
+                  demand</a></strong> <br>
+                        </p>
+                        <button class="empresa horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:400ms;" data-no-scale> Soy representante de empresa </button>
+                        <button class="noactive empleado horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:600ms;" data-no-scale> Soy colaborador de
+              empresa </button>
+                    </div>
+                    <figure class="horizon diario-home" data-animate-in="preset:slideInRightShort;duration:1000ms;" data-threshold="0.6">
+                        <img src="./assets/img/pago-diario_home.png">
+                    </figure>
+                </div>
+
+            </section>
+
+            <section class="section-funcionamiento horizon" id="" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:100ms;" data-threshold="0.6">
+
+                <div class="container flex">
+                    <div id="cambio2"></div>
+                    <div id="cambio"></div>
+                    <div class="container-funcionamiento centrar-f ">
+                        <!-- <figure class="horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;" data-threshold="0.6">
                     <img src="./assets/img/scroll.png">
                     <img src="./assets/img/play.png" class="last">
                 </figure> -->
-                <div class="row w-100 centrar-f2">
-                    <div class="col-lg-6 col-md-6 col-12 centrar p-lg-5 p-md-3 p-0">
-                        <h3>El nuevo beneficio empresarial que te hará ahorrar miles en rotación</h3>
-                        <p class="justify">Pago Diario, la app de salario on-demand que te permite disponer del salario ya trabajado de forma inmediata, con una comisión fija. </p>
-                        <p class="justify mt-2"> <strong> Disminuye la rotación en tu empresa y muéstrate como una
-                  empresa innovadora con inversión
-                </strong> </p>
-                        <br>
+                        <div class="row w-100 centrar-f2">
+                            <div class="col-lg-6 col-md-6 col-12 centrar p-lg-5 p-md-3 p-0">
 
-                        <p>- No es préstamo, no genera intereses.</p>
-                        <p>- Sin costo para tu empresa.</p>
-                        <p>- Sin costo por descarga para tus colaboradores.</p>
-                        <p>- Movimientos seguros y verificados.</p>
-                        <p>- Asistencia personalizada.</p>
+                                <img class="img-fluid" src="./assets/img/scroll.png" alt="celular">
+                            </div>
 
-                        <a href="#ondemand"> Más beneficios </a>
-                    </div>
+                            <div class="col-lg-6 col-md-6 col-12 centrar mt-lg-0 mt-md-0 mt-5 p-lg-5 p-md-3 p-0">
 
-                    <div class="col-lg-6 col-md-6 col-12 centrar mt-lg-0 mt-md-0 mt-5 p-lg-5 p-md-3 p-0">
-                        <h3>¿Como funciona?</h3>
-                        <p class="justify">Con Pago Diario tus colaboradores podrán retirar el monto correspondiente a sus días ya trabajados de forma inmediata, 24/7. </p>
+                                <div id="texto-1">
+                                    <h3>El nuevo beneficio empresarial que te hará ahorrar miles en rotación</h3>
+                                    <p class="text-left">Pago Diario, la app de salario on-demand que te permite disponer del salario ya trabajado de forma inmediata, con una comisión fija. </p>
+                                    <p class="text-left mt-2"> <strong> Disminuye la rotación en tu empresa y muéstrate como
+                      una
+                      empresa innovadora con inversión
+                    </strong> </p>
+                                    <br>
+                                    <p>- No es préstamo, no genera intereses.</p>
+                                    <p>- Sin costo para tu empresa.</p>
+                                    <p>- Sin costo por descarga para tus colaboradores.</p>
+                                    <p>- Movimientos seguros y verificados.</p>
+                                    <p>- Asistencia personalizada.</p>
 
-                        <p>1. Descarga de app y registro</p>
-                        <p>2. Disposición de salario trabajado</p>
-                        <p>3. Recepción de dinero de forma inmediata en la cuenta de nómina</p>
 
-                        <button class="empresa"> Implemente este beneficio en tu empresa </button>
+                                    <a href="#ondemand"> Más beneficios </a>
+
+                                </div>
+
+                                <div id="texto-2" class="ocultar">
+
+                                    <h3>¿Como funciona?</h3>
+                                    <p class="text-left">Con Pago Diario tus colaboradores podrán retirar el monto correspondiente a sus días ya trabajados de forma inmediata, 24/7. </p>
+
+                                    <p>1. Descarga de app y registro</p>
+                                    <p>2. Disposición de salario trabajado</p>
+                                    <p>3. Recepción de dinero de forma inmediata en la cuenta de nómina</p>
+
+                                    <button class="empresa"> Implemente este beneficio en tu empresa </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <section class="section-ondemand" id="ondemand">
-        <div class="container flex">
-            <div class="on-demand-texto horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:100ms;" data-threshold="0.6">
-                <h2 class="center-movil">Salario <br>on demand </h2>
-                <p class="texto-tendencia center-movil">como tendencia mundial</p>
-                <hr>
-                <p class="first justify">
-                    Se le llama <strong>salario On- Demand</strong> a la aplicación que permite a los empleados retirar su sueldo ya trabajado antes de su fecha de pago, sin trámites forzosos y con una comisión mínima, solo con una comisión.
-                </p>
-                <p class="justify">
-                    Sabías que está tendencia tiene poco más de 70 años pero recientemente Walmart EUA es el caso de éxito más conocido en el mundo, ya que llegó a 1.5 millones de colaboradores y fue adoptado por el 50%, mejorando su rendimiento y considerándose una de las
-                    prestaciones más importantes de su esquema.
-                </p>
-            </div>
-            <div class="on-demand-imgs horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:200ms;" data-threshold="0.6">
-                <figure class="img-01">
-                    <img src="./assets/img/beneficio_0_em.png">
-                </figure>
-                <figure class="img-02">
-                    <img src="./assets/img/beneficio_2_em.png">
-                </figure>
-                <figure class="img-03">
-                    <img src="./assets/img/beneficio_1_em.png">
-                </figure>
-            </div>
-        </div>
-    </section>
+            <section class="section-ondemand" id="ondemand">
 
-    <!-- <section class="section-testimonios" id="testimonios">
-        <div class="container flex">
-            <div class="titulo-testimonios horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:300ms;" data-threshold="0.6">
-                <h2>Nuestros testimonios</h2>
+                <div class="container flex">
+                    <div class="on-demand-texto horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:100ms;" data-threshold="0.6">
+                        <h2 class="center-movil">Salario <br>on demand </h2>
+                        <p class="texto-tendencia center-movil">como tendencia mundial</p>
+                        <hr>
+                        <p class="first text-left">
+                            Se le llama <strong>salario On- Demand</strong> a la aplicación que permite a los empleados retirar su sueldo ya trabajado antes de su fecha de pago, sin trámites forzosos y con una comisión mínima, solo con una comisión.
+                        </p>
+                        <p class="text-left">
+                            Sabías que está tendencia tiene poco más de 70 años pero recientemente Walmart EUA es el caso de éxito más conocido en el mundo, ya que llegó a 1.5 millones de colaboradores y fue adoptado por el 50%, mejorando su rendimiento y considerándose una de las
+                            prestaciones más importantes de su esquema.
+                        </p>
+                    </div>
+                    <div class="on-demand-imgs horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:200ms;" data-threshold="0.6">
+                        <figure class="img-01">
+                            <img src="./assets/img/beneficio_0_em.png">
+                        </figure>
+                        <figure class="img-02">
+                            <img src="./assets/img/beneficio_2_em.png">
+                        </figure>
+                        <figure class="img-03">
+                            <img src="./assets/img/beneficio_1_em.png">
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section class="section-testimonios" id="testimonios">
+          <div class="container flex">
+              <div class="titulo-testimonios horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:300ms;" data-threshold="0.6">
+                  <h2>Nuestros testimonios</h2>
             </div>
             <div class="horizon slider-testimonios slide-mobile slide slide-index" data-animate-in="preset:slideInRightShort;duration:1000ms;" data-threshold="0.6">
                 <div class="container-card">
-                    <div class="card-titulo">
-                        <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
-                        <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
-                        <figure>
-                            <img src="./assets/img/logo-azlo.png">                            
-                        </figure>
-                    </div>
-                </div>
-                <div class="container-card">
-                    <div class="card-titulo">
-                        <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
+                      <div class="card-titulo">
+                          <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
+                          <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
+                          <figure>
+                              <img src="./assets/img/logo-azlo.png">                            
+                          </figure>
+                      </div>
+                  </div>
+                  <div class="container-card">
+                      <div class="card-titulo">
+                          <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
                         <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
                         <figure>
                             <img src="./assets/img/pae-logo.png">                        
-                        </figure>
-                    </div>
-                </div>
-                <div class="container-card">
-                    <div class="card-titulo">
+                          </figure>
+                      </div>
+                  </div>
+                  <div class="container-card">
+                      <div class="card-titulo">
                         <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
                         <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
                         <figure>
-                            <img src="./assets/img/rabbit-logo.png">                            
+                              <img src="./assets/img/rabbit-logo.png">                            
+                          </figure>
+                      </div>
+                  </div>
+                  <div class="container-card">
+                      <div class="card-titulo">
+                          <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
+                          <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
+                          <figure>
+                              <img src="./assets/img/m-logo.png">                         
                         </figure>
                     </div>
                 </div>
-                <div class="container-card">
+  
+                  <div class="container-card">
+                      <div class="card-titulo">
+                          <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
+                          <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
+                          <figure>
+                              <img src="./assets/img/logo-azlo.png">                            
+                        </figure>
+                    </div>
+                </div>
+                  <div class="container-card">
+                      <div class="card-titulo">
+                          <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
+                          <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
+                          <figure>
+                              <img src="./assets/img/pae-logo.png">                            
+                          </figure>
+                      </div>
+                  </div>
+                  <div class="container-card">
                     <div class="card-titulo">
                         <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
                         <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
-                        <figure>
-                            <img src="./assets/img/m-logo.png">                         
-                        </figure>
-                    </div>
-                </div>
-
+                          <figure>
+                              <img src="./assets/img/rabbit-logo.png">                            
+                          </figure>
+                      </div>
+                  </div>
                 <div class="container-card">
                     <div class="card-titulo">
                         <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
-                        <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
-                        <figure>
-                            <img src="./assets/img/logo-azlo.png">                            
-                        </figure>
-                    </div>
-                </div>
-                <div class="container-card">
-                    <div class="card-titulo">
-                        <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
-                        <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
-                        <figure>
-                            <img src="./assets/img/pae-logo.png">                            
-                        </figure>
-                    </div>
-                </div>
-                <div class="container-card">
-                    <div class="card-titulo">
-                        <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
-                        <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
-                        <figure>
-                            <img src="./assets/img/rabbit-logo.png">                            
-                        </figure>
-                    </div>
-                </div>
-                <div class="container-card">
-                    <div class="card-titulo">
-                        <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
-                        <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
-                        <figure>
-                            <img src="./assets/img/m-logo.png">                            
-                        </figure>
-                    </div>
-                </div>
+                          <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
+                          <figure>
+                              <img src="./assets/img/m-logo.png">                            
+                          </figure>
+                      </div>
+                  </div>
             </div>
 
             <div class="slider-testimonios slide-desktop slide slide-index horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;" data-threshold="0.6">
-                <div class="container-card">
-                    <div class="card-titulo">
-                        <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
-                        <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
-                        <figure>
-                            <img src="./assets/img/logo-azlo.png">                            
+                  <div class="container-card">
+                      <div class="card-titulo">
+                          <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
+                          <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
+                          <figure>
+                              <img src="./assets/img/logo-azlo.png">                            
                         </figure>
                     </div>
                     <div class="card-titulo">
-                        <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
-                        <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
-                        <figure>
-                            <img src="./assets/img/pae-logo.png">                            
+                          <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
+                          <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
+                          <figure>
+                              <img src="./assets/img/pae-logo.png">                            
+                          </figure>
+                      </div>
+                      <div class="card-titulo">
+                          <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
+                          <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
+                          <figure>
+                              <img src="./assets/img/rabbit-logo.png">                            
                         </figure>
                     </div>
                     <div class="card-titulo">
-                        <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
-                        <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
-                        <figure>
-                            <img src="./assets/img/rabbit-logo.png">                            
-                        </figure>
-                    </div>
-                    <div class="card-titulo">
-                        <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
-                        <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
-                        <figure>
-                            <img src="./assets/img/m-logo.png">                            
-                        </figure>
-                    </div>
+                          <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
+                          <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
+                          <figure>
+                              <img src="./assets/img/m-logo.png">                            
+                          </figure>
+                      </div>
                 </div>
                 <div class="container-card">
                     <div class="card-titulo">
-                        <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
-                        <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
-                        <figure>
-                            <img src="./assets/img/logo-azlo.png">                            
+                          <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
+                          <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
+                          <figure>
+                              <img src="./assets/img/logo-azlo.png">                            
                         </figure>
                     </div>
                     <div class="card-titulo">
-                        <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
-                        <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
-                        <figure>
+                          <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
+                          <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
+                          <figure>
                             <img src="./assets/img/pae-logo.png">                            
                         </figure>
                     </div>
                     <div class="card-titulo">
-                        <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
-                        <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
-                        <figure>
-                            <img src="./assets/img/rabbit-logo.png">                            
-                        </figure>
-                    </div>
-                    <div class="card-titulo">
-                        <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
-                        <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
-                        <figure>
-                            <img src="./assets/img/m-logo.png">                            
-                        </figure>
-                    </div>
+                          <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
+                          <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
+                          <figure>
+                              <img src="./assets/img/rabbit-logo.png">                            
+                          </figure>
+                      </div>
+                      <div class="card-titulo">
+                          <p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
+                          <p class="cliente_nombre">Nombre Apellido <br> puesto</p>
+                          <figure>
+                              <img src="./assets/img/m-logo.png">                            
+                          </figure>
+                      </div>
                 </div>
             </div>
 
-            <p class="horizon empresa" data-animate-in="preset:slideInRightShort;duration:1000ms;" data-threshold="0.6">
+              <p class="horizon empresa" data-animate-in="preset:slideInRightShort;duration:1000ms;" data-threshold="0.6">
                 ¿Como puedo obtener este beneficio para mi empresa?</p>
         </div>
     </section> -->
-    <section class="beneficios-empresas" id="empresas">
-        <div class="container flex">
-            <h2 class="horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:300ms;" data-threshold="0.6">
-                Beneficios para empresas </h2>
-            <div class="container-beneficiosemp">
-                <figure class="horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;" data-threshold="0.6">
-                    <img src="./assets/img/empresas1.png">
-                    <!-- IMAGEN 5  -->
-                    <img src="./assets/img/empresas2.png" class="img-two-be">
-                </figure>
-                <div class="horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:300ms;" data-threshold="0.6">
+            <section class="beneficios-empresas" id="empresas">
+                <div class="container flex">
+                    <h2 class="horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:300ms;" data-threshold="0.6">
+                        Beneficios para empresas </h2>
+                    <div class="container-beneficiosemp">
+                        <figure class="horizon mb-100" data-animate-in="preset:slideInRightShort;duration:1000ms;" data-threshold="0.6">
+                            <img src="./assets/img/empresas1.png">
+                            <!-- IMAGEN 5  -->
+                            <img src="./assets/img/empresas2.png" class="img-two-be">
+                        </figure>
+                        <div class="horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:300ms;" data-threshold="0.6">
 
-                    <p class="justify">Inversión financiera de $0 para empresa, sin riesgos. </p>
+                            <p class="text-left">Inversión financiera de $0 para empresa, sin riesgos. </p>
 
-                    <p class="justify">Nos ajustamos a los formatos, procesos y/o softwares de nómina de tu empresa.</p>
+                            <p class="text-left">Nos ajustamos a los formatos, procesos y/o softwares de nómina de tu empresa.</p>
 
-                    <p class="justify">Seguimiento sencillo y práctico a través de panel de administración.</p>
+                            <p class="text-left">Seguimiento sencillo y práctico a través de panel de administración.</p>
 
-                    <p class="justify">Muéstrate como una empresa innovadora y tecnológica. </p>
+                            <p class="text-left">Muéstrate como una empresa innovadora y tecnológica. </p>
 
-                    <p class="justify">Atrae al talento hacia ti: fortalece tu competitividad corporativa.</p>
+                            <p class="text-left">Atrae al talento hacia ti: fortalece tu competitividad corporativa.</p>
 
-                    <p class="justify">Reduce el estrés y brinda estabilidad financiera a colaboradores.</p>
+                            <p class="text-left">Reduce el estrés y brinda estabilidad financiera a colaboradores.</p>
 
-                    <button class="empresa"> Consiguelo sin costo </button>
+                            <button class="empresa"> Consiguelo sin costo </button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="beneficios-colab" id="colaboradores">
-        <div class="container flex">
-            <h2 class="horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:300ms;" data-threshold="0.6">
-                Beneficios para colaboradores</h2>
-            <div class="container-beneficioscolab">
-                <div class="horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:300ms;" data-threshold="0.6">
+            </section>
+            <section class="beneficios-colab" id="colaboradores">
+                <div class="container flex">
+                    <h2 class="horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:300ms;" data-threshold="0.6">
+                        Beneficios para colaboradores</h2>
+                    <div class="container-beneficioscolab">
+                        <div class="horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:300ms;" data-threshold="0.6">
 
-                    <p class="justify">Acceso a tu nómina 24/7, sobre días laborados.</p>
+                            <p class="text-left">Acceso a tu nómina 24/7, sobre días laborados.</p>
 
-                    <p class="justify">Sin procesos y sin aprobaciones.</p>
+                            <p class="text-left">Sin procesos y sin aprobaciones.</p>
 
-                    <p class="justify">Movimientos verificados y avalados por empresa de origen.</p>
+                            <p class="text-left">Movimientos verificados y avalados por empresa de origen.</p>
 
-                    <p class="justify">Estabilidad financiera.</p>
+                            <p class="text-left">Estabilidad financiera.</p>
 
-                    <p class="justify">Comisión más baja que una entidad bancaria.</p>
+                            <p class="text-left">Comisión más baja que una entidad bancaria.</p>
 
 
-                    <button class="empleado"> Lo quiero en mi empresa </button>
+                            <button class="empleado"> Lo quiero en mi empresa </button>
+                        </div>
+                        <figure class="horizon mb-100" data-animate-in="preset:slideInRightShort;duration:1000ms;" data-threshold="0.6">
+                            <img src="./assets/img/emplado1.png">
+                            <!-- IMAGEN 6  -->
+                            <img src="./assets/img/emplado2.png" class="img-two-bc">
+                        </figure>
+                    </div>
                 </div>
-                <figure class="horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;" data-threshold="0.6">
-                    <img src="./assets/img/emplado1.png">
-                    <!-- IMAGEN 6  -->
-                    <img src="./assets/img/emplado2.png" class="img-two-bc">
-                </figure>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="footercontainer flex">
-            <div class="img-celular">
-                <figure>
-                    <img src="./assets/img/pixlr-bg-result.png">
-                    <!-- IMAGEN 8 FOOTER TELEFONO  -->
-                </figure>
-            </div>
-            <div class="container-infocontacto">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 717.73 179.51">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill: #c6c6c6;
-                }
+            </section>
+            <footer>
+                <div class="footercontainer flex">
+                    <div class="img-celular">
+                        <figure>
+                            <img src="./assets/img/pixlr-bg-result.png">
+                            <!-- IMAGEN 8 FOOTER TELEFONO  -->
+                        </figure>
+                    </div>
+                    <div class="container-infocontacto">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 717.73 179.51">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #c6c6c6;
+                  }
 
-                .cls-2 {
-                  fill: #fff;
-                }
-              </style>
-            </defs>
-            <g id="Layer_2" data-name="Layer 2">
-              <g id="Layer_1-2" data-name="Layer 1">
-                <path class="cls-1"
-                  d="M130.72,78.66c-5-18.33-19.92-31.82-37.59-34C71.4,41.89,53.39,57.19,46.53,73.46,39.24,90.78,45.4,107.23,48,114.19c8.26,22,25.92,32.24,31.32,35.06a65.68,65.68,0,0,0,37.57,7A65,65,0,0,0,156.67,137a67.85,67.85,0,0,0,18.24-39,89.87,89.87,0,0,1-15.29,43.74,88.81,88.81,0,0,1-38.49,31.11,86.3,86.3,0,0,1-36.84,6.6c-36.89-1.72-59.7-27.53-62.44-30.73C17.06,143.09-1.64,120.54.12,88.17c.42-7.81,1.76-27.34,16.57-44.31C18.53,41.76,38,20.25,68.26,21.62c24.72,1.11,47.11,17,58.21,40.91Z" />
-                <path class="cls-2"
-                  d="M44.33,101.36c.75-.34,3.8,16,17.13,26a43.18,43.18,0,0,0,37.76,6.41c1.72-.51,19.26-6,27.63-24.13,4.69-10.12,4.23-19.28,3.86-25.26a68.14,68.14,0,0,0-15.84-39C94.08,21.12,64.08,22.08,62.2,22.17,30.26,23.74,12.92,48.9,10.26,52.9A70.27,70.27,0,0,0,.13,77.22C5,44.56,26.2,17,55.75,5.58c30.32-11.75,60.94-3.31,80.49,10.18a91,91,0,0,1,25.42,27.15,84.44,84.44,0,0,1,12.89,38.46c.58,7.8,2.19,29.77-12.52,49.59-12,16.11-28.1,22-36.1,24.13a65.55,65.55,0,0,1-36.1-.76C69.75,148,59.1,133.64,55.94,129.26,46.16,115.71,43.63,101.66,44.33,101.36Z" />
-                <path class="cls-2"
-                  d="M210.19,136.8V67.34h8.22v8.72h.1q6-9.32,17.57-9.32A22.57,22.57,0,0,1,253.34,74q6.79,7.29,6.8,18.35t-6.85,18a23.18,23.18,0,0,1-17.21,6.94q-11.69,0-17.57-9.12h-.1V136.8Zm24.77-27a16,16,0,0,0,12.14-5,17.42,17.42,0,0,0,4.72-12.47q0-8-4.88-13.08a16.07,16.07,0,0,0-12.08-5.07,15.6,15.6,0,0,0-12.13,5.22A18.55,18.55,0,0,0,218,92.39,17,17,0,0,0,222.88,105,16.41,16.41,0,0,0,235,109.83Z" />
-                <path class="cls-2"
-                  d="M293.35,117.33a23.15,23.15,0,0,1-17.21-6.94q-6.86-6.94-6.86-18T276.08,74a22.57,22.57,0,0,1,17.27-7.3,20.67,20.67,0,0,1,10,2.48,18.53,18.53,0,0,1,7.21,7l.2-.11V67.34H319v49.39h-7.92V107.8H311Q305.22,117.34,293.35,117.33Zm1.21-7.5A15.83,15.83,0,0,0,306.34,105a17.18,17.18,0,0,0,4.77-12.57,18.65,18.65,0,0,0-4.67-12.93,15.23,15.23,0,0,0-11.88-5.22,16.09,16.09,0,0,0-12.08,5.07q-4.87,5.07-4.87,13.08a17.37,17.37,0,0,0,4.72,12.47A16.12,16.12,0,0,0,294.56,109.83Z" />
-                <path class="cls-2"
-                  d="M355.69,137.41A38.29,38.29,0,0,1,335.58,132l2-7.3a35.72,35.72,0,0,0,17.77,5.17q8,0,12.29-4.11a14.19,14.19,0,0,0,4.26-10.7v-7.91h-.2q-6,8.63-17.16,8.62A23.32,23.32,0,0,1,337.46,109q-6.85-6.8-6.85-17.64,0-10.65,6.65-17.65t17-7q11.06,0,17.36,8.51h.2V67.34h8.23v45.73q0,11.27-6,17.8T355.69,137.41Zm-.1-29.2a15.66,15.66,0,0,0,12-4.87A17.38,17.38,0,0,0,372.14,91,16.81,16.81,0,0,0,343.6,79.11a16.53,16.53,0,0,0-4.67,12.06q0,7.71,4.73,12.37A16.26,16.26,0,0,0,355.59,108.21Z" />
-                <path class="cls-2"
-                  d="M417.22,117.33q-11.37,0-18.48-7.2a24.62,24.62,0,0,1-7.11-18A24.79,24.79,0,0,1,398.74,74q7.11-7.26,18.48-7.25,11.05,0,18.27,7.09t7.21,18.25q0,11.16-7.21,18.21T417.22,117.33Zm0-7.5a16.42,16.42,0,0,0,12.13-5,17.39,17.39,0,0,0,4.93-12.78,17.55,17.55,0,0,0-4.93-12.82,16.31,16.31,0,0,0-12.13-5,16.07,16.07,0,0,0-12.39,5.17,18,18,0,0,0-4.77,12.67,17.69,17.69,0,0,0,4.82,12.63A16.21,16.21,0,0,0,417.22,109.83Z" />
-                <path class="cls-2"
-                  d="M481.66,117.33a23.46,23.46,0,0,1-17.36-6.94q-6.9-6.94-6.91-18t6.91-18.3a22.7,22.7,0,0,1,17.26-7.35q11.78,0,17.67,9.43h.1V42.1h8.22v74.63h-7.92V107.6h-.1Q493.74,117.34,481.66,117.33Zm1.12-7.5a16.28,16.28,0,0,0,12-4.87,17,17,0,0,0,4.87-12.57,18.55,18.55,0,0,0-4.72-12.93,15.51,15.51,0,0,0-12-5.22,16.23,16.23,0,0,0-12.13,5.07q-4.94,5.07-4.93,13.08a17.42,17.42,0,0,0,4.72,12.47A16.14,16.14,0,0,0,482.78,109.83Z" />
-                <path class="cls-2"
-                  d="M531.92,56.6a6.15,6.15,0,0,1-8.53,0,5.89,5.89,0,0,1,0-8.32,6.15,6.15,0,0,1,8.53,0,5.87,5.87,0,0,1,0,8.32Zm-8.43,60.13V67.34h8.23v49.39Z" />
-                <path class="cls-2"
-                  d="M568.58,117.33a23.15,23.15,0,0,1-17.21-6.94q-6.86-6.94-6.86-18T551.31,74a22.57,22.57,0,0,1,17.27-7.3,20.67,20.67,0,0,1,10,2.48,18.53,18.53,0,0,1,7.21,7l.2-.11V67.34h8.22v49.39h-7.92V107.8h-.1Q580.45,117.34,568.58,117.33Zm1.21-7.5A15.83,15.83,0,0,0,581.57,105a17.18,17.18,0,0,0,4.77-12.57,18.65,18.65,0,0,0-4.67-12.93,15.23,15.23,0,0,0-11.88-5.22,16.09,16.09,0,0,0-12.08,5.07q-4.87,5.07-4.87,13.08a17.37,17.37,0,0,0,4.72,12.47A16.12,16.12,0,0,0,569.79,109.83Z" />
-                <path class="cls-2"
-                  d="M609.09,116.73V67.34h8.22v9h.21q5.68-9.63,16-9.63a15.06,15.06,0,0,1,2,.1V76c-1.63-.13-2.71-.2-3.25-.2a13.68,13.68,0,0,0-11,4.77q-4.05,4.75-4.06,12.37v23.83Z" />
-                <path class="cls-2"
-                  d="M654,56.6a6.15,6.15,0,0,1-8.53,0,5.87,5.87,0,0,1,0-8.32,6.15,6.15,0,0,1,8.53,0,5.89,5.89,0,0,1,0,8.32Zm-8.43,60.13V67.34h8.22v49.39Z" />
-                <path class="cls-2"
-                  d="M692.24,117.33q-11.37,0-18.47-7.2a24.62,24.62,0,0,1-7.11-18A24.79,24.79,0,0,1,673.77,74q7.1-7.26,18.47-7.25,11.07,0,18.28,7.09t7.21,18.25q0,11.16-7.21,18.21T692.24,117.33Zm0-7.5a16.44,16.44,0,0,0,12.14-5,17.38,17.38,0,0,0,4.92-12.78,17.54,17.54,0,0,0-4.92-12.82,16.34,16.34,0,0,0-12.14-5,16.06,16.06,0,0,0-12.38,5.17,18,18,0,0,0-4.77,12.67,17.69,17.69,0,0,0,4.82,12.63A16.19,16.19,0,0,0,692.24,109.83Z" />
+                  .cls-2 {
+                    fill: #fff;
+                  }
+                </style>
+              </defs>
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_1-2" data-name="Layer 1">
+                  <path class="cls-1"
+                    d="M130.72,78.66c-5-18.33-19.92-31.82-37.59-34C71.4,41.89,53.39,57.19,46.53,73.46,39.24,90.78,45.4,107.23,48,114.19c8.26,22,25.92,32.24,31.32,35.06a65.68,65.68,0,0,0,37.57,7A65,65,0,0,0,156.67,137a67.85,67.85,0,0,0,18.24-39,89.87,89.87,0,0,1-15.29,43.74,88.81,88.81,0,0,1-38.49,31.11,86.3,86.3,0,0,1-36.84,6.6c-36.89-1.72-59.7-27.53-62.44-30.73C17.06,143.09-1.64,120.54.12,88.17c.42-7.81,1.76-27.34,16.57-44.31C18.53,41.76,38,20.25,68.26,21.62c24.72,1.11,47.11,17,58.21,40.91Z" />
+                  <path class="cls-2"
+                    d="M44.33,101.36c.75-.34,3.8,16,17.13,26a43.18,43.18,0,0,0,37.76,6.41c1.72-.51,19.26-6,27.63-24.13,4.69-10.12,4.23-19.28,3.86-25.26a68.14,68.14,0,0,0-15.84-39C94.08,21.12,64.08,22.08,62.2,22.17,30.26,23.74,12.92,48.9,10.26,52.9A70.27,70.27,0,0,0,.13,77.22C5,44.56,26.2,17,55.75,5.58c30.32-11.75,60.94-3.31,80.49,10.18a91,91,0,0,1,25.42,27.15,84.44,84.44,0,0,1,12.89,38.46c.58,7.8,2.19,29.77-12.52,49.59-12,16.11-28.1,22-36.1,24.13a65.55,65.55,0,0,1-36.1-.76C69.75,148,59.1,133.64,55.94,129.26,46.16,115.71,43.63,101.66,44.33,101.36Z" />
+                  <path class="cls-2"
+                    d="M210.19,136.8V67.34h8.22v8.72h.1q6-9.32,17.57-9.32A22.57,22.57,0,0,1,253.34,74q6.79,7.29,6.8,18.35t-6.85,18a23.18,23.18,0,0,1-17.21,6.94q-11.69,0-17.57-9.12h-.1V136.8Zm24.77-27a16,16,0,0,0,12.14-5,17.42,17.42,0,0,0,4.72-12.47q0-8-4.88-13.08a16.07,16.07,0,0,0-12.08-5.07,15.6,15.6,0,0,0-12.13,5.22A18.55,18.55,0,0,0,218,92.39,17,17,0,0,0,222.88,105,16.41,16.41,0,0,0,235,109.83Z" />
+                  <path class="cls-2"
+                    d="M293.35,117.33a23.15,23.15,0,0,1-17.21-6.94q-6.86-6.94-6.86-18T276.08,74a22.57,22.57,0,0,1,17.27-7.3,20.67,20.67,0,0,1,10,2.48,18.53,18.53,0,0,1,7.21,7l.2-.11V67.34H319v49.39h-7.92V107.8H311Q305.22,117.34,293.35,117.33Zm1.21-7.5A15.83,15.83,0,0,0,306.34,105a17.18,17.18,0,0,0,4.77-12.57,18.65,18.65,0,0,0-4.67-12.93,15.23,15.23,0,0,0-11.88-5.22,16.09,16.09,0,0,0-12.08,5.07q-4.87,5.07-4.87,13.08a17.37,17.37,0,0,0,4.72,12.47A16.12,16.12,0,0,0,294.56,109.83Z" />
+                  <path class="cls-2"
+                    d="M355.69,137.41A38.29,38.29,0,0,1,335.58,132l2-7.3a35.72,35.72,0,0,0,17.77,5.17q8,0,12.29-4.11a14.19,14.19,0,0,0,4.26-10.7v-7.91h-.2q-6,8.63-17.16,8.62A23.32,23.32,0,0,1,337.46,109q-6.85-6.8-6.85-17.64,0-10.65,6.65-17.65t17-7q11.06,0,17.36,8.51h.2V67.34h8.23v45.73q0,11.27-6,17.8T355.69,137.41Zm-.1-29.2a15.66,15.66,0,0,0,12-4.87A17.38,17.38,0,0,0,372.14,91,16.81,16.81,0,0,0,343.6,79.11a16.53,16.53,0,0,0-4.67,12.06q0,7.71,4.73,12.37A16.26,16.26,0,0,0,355.59,108.21Z" />
+                  <path class="cls-2"
+                    d="M417.22,117.33q-11.37,0-18.48-7.2a24.62,24.62,0,0,1-7.11-18A24.79,24.79,0,0,1,398.74,74q7.11-7.26,18.48-7.25,11.05,0,18.27,7.09t7.21,18.25q0,11.16-7.21,18.21T417.22,117.33Zm0-7.5a16.42,16.42,0,0,0,12.13-5,17.39,17.39,0,0,0,4.93-12.78,17.55,17.55,0,0,0-4.93-12.82,16.31,16.31,0,0,0-12.13-5,16.07,16.07,0,0,0-12.39,5.17,18,18,0,0,0-4.77,12.67,17.69,17.69,0,0,0,4.82,12.63A16.21,16.21,0,0,0,417.22,109.83Z" />
+                  <path class="cls-2"
+                    d="M481.66,117.33a23.46,23.46,0,0,1-17.36-6.94q-6.9-6.94-6.91-18t6.91-18.3a22.7,22.7,0,0,1,17.26-7.35q11.78,0,17.67,9.43h.1V42.1h8.22v74.63h-7.92V107.6h-.1Q493.74,117.34,481.66,117.33Zm1.12-7.5a16.28,16.28,0,0,0,12-4.87,17,17,0,0,0,4.87-12.57,18.55,18.55,0,0,0-4.72-12.93,15.51,15.51,0,0,0-12-5.22,16.23,16.23,0,0,0-12.13,5.07q-4.94,5.07-4.93,13.08a17.42,17.42,0,0,0,4.72,12.47A16.14,16.14,0,0,0,482.78,109.83Z" />
+                  <path class="cls-2"
+                    d="M531.92,56.6a6.15,6.15,0,0,1-8.53,0,5.89,5.89,0,0,1,0-8.32,6.15,6.15,0,0,1,8.53,0,5.87,5.87,0,0,1,0,8.32Zm-8.43,60.13V67.34h8.23v49.39Z" />
+                  <path class="cls-2"
+                    d="M568.58,117.33a23.15,23.15,0,0,1-17.21-6.94q-6.86-6.94-6.86-18T551.31,74a22.57,22.57,0,0,1,17.27-7.3,20.67,20.67,0,0,1,10,2.48,18.53,18.53,0,0,1,7.21,7l.2-.11V67.34h8.22v49.39h-7.92V107.8h-.1Q580.45,117.34,568.58,117.33Zm1.21-7.5A15.83,15.83,0,0,0,581.57,105a17.18,17.18,0,0,0,4.77-12.57,18.65,18.65,0,0,0-4.67-12.93,15.23,15.23,0,0,0-11.88-5.22,16.09,16.09,0,0,0-12.08,5.07q-4.87,5.07-4.87,13.08a17.37,17.37,0,0,0,4.72,12.47A16.12,16.12,0,0,0,569.79,109.83Z" />
+                  <path class="cls-2"
+                    d="M609.09,116.73V67.34h8.22v9h.21q5.68-9.63,16-9.63a15.06,15.06,0,0,1,2,.1V76c-1.63-.13-2.71-.2-3.25-.2a13.68,13.68,0,0,0-11,4.77q-4.05,4.75-4.06,12.37v23.83Z" />
+                  <path class="cls-2"
+                    d="M654,56.6a6.15,6.15,0,0,1-8.53,0,5.87,5.87,0,0,1,0-8.32,6.15,6.15,0,0,1,8.53,0,5.89,5.89,0,0,1,0,8.32Zm-8.43,60.13V67.34h8.22v49.39Z" />
+                  <path class="cls-2"
+                    d="M692.24,117.33q-11.37,0-18.47-7.2a24.62,24.62,0,0,1-7.11-18A24.79,24.79,0,0,1,673.77,74q7.1-7.26,18.47-7.25,11.07,0,18.28,7.09t7.21,18.25q0,11.16-7.21,18.21T692.24,117.33Zm0-7.5a16.44,16.44,0,0,0,12.14-5,17.38,17.38,0,0,0,4.92-12.78,17.54,17.54,0,0,0-4.92-12.82,16.34,16.34,0,0,0-12.14-5,16.06,16.06,0,0,0-12.38,5.17,18,18,0,0,0-4.77,12.67,17.69,17.69,0,0,0,4.82,12.63A16.19,16.19,0,0,0,692.24,109.83Z" />
+                </g>
               </g>
-            </g>
-          </svg>
-                <div class="d-block">
-                    <p class="text-left">
-                        <i class="fal fa-map-marker-alt fa-2x"></i>
-                        <a href="https://www.google.com.mx/maps/place/Palo+Santo+16,+Lomas+Altas,+Miguel+Hidalgo,+11950+Ciudad+de+M%C3%A9xico,+CDMX/@19.3965293,-99.2298072,17z/data=!3m1!4b1!4m5!3m4!1s0x85d201a43412642f:0xae46429d38dc91a0!8m2!3d19.3965293!4d-99.2276185" class="activo-icon"
-                            target="_blank"> Palo Santo 16 Col Lomas Altas <a />
-            </p>
-            <p class="text-left">
-              <i class="fal fa-phone-alt fa-2x"></i> <a href="tel:+525575868002" target="_blank" class="activo-icon">
-                (55) 7586 8002 </a>
-                    </p>
-                    <p class="text-left">
-                        <i class="fab fa-whatsapp fa-2x"></i> <a href="https://api.whatsapp.com/send?phone=+525536782904" target="_blank" class="activo-icon"> (55)3678 2904 </a>
-                    </p>
-                    <p class="text-left">
-                        <i class="fal fa-envelope fa-2x"></i> <a href="mailto:contacto@tupagodiario.com" target="_blank" class="activo-icon"> contacto@tupagodiario.com </a>
-                    </p>
+            </svg>
+                        <div class="d-block">
+                            <p class="text-left">
+                                <i class="fal fa-map-marker-alt fa-2x"></i>
+                                <a href="https://www.google.com.mx/maps/place/Palo+Santo+16,+Lomas+Altas,+Miguel+Hidalgo,+11950+Ciudad+de+M%C3%A9xico,+CDMX/@19.3965293,-99.2298072,17z/data=!3m1!4b1!4m5!3m4!1s0x85d201a43412642f:0xae46429d38dc91a0!8m2!3d19.3965293!4d-99.2276185" class="activo-icon"
+                                    target="_blank"> Palo Santo 16 Col Lomas Altas <a />
+              </p>
+              <p class="text-left">
+                <i class="fal fa-phone-alt fa-2x"></i> <a href="tel:+525575868002" target="_blank" class="activo-icon">
+                  (55) 7586 8002 </a>
+                            </p>
+                            <p class="text-left">
+                                <i class="fab fa-whatsapp fa-2x"></i> <a href="https://api.whatsapp.com/send?phone=+525536782904" target="_blank" class="activo-icon"> (55)3678 2904 </a>
+                            </p>
+                            <p class="text-left">
+                                <i class="fal fa-envelope fa-2x"></i> <a href="mailto:contacto@tupagodiario.com" target="_blank" class="activo-icon"> contacto@tupagodiario.com </a>
+                            </p>
 
 
-                    <p class="text-left">Terminos y condiciones de uso</p>
-                    <p class="text-left">Pago Diario es un producto de Productos para Empleados SAPI de CV</p>
+                            <p class="text-left">Terminos y condiciones de uso</p>
+                            <p class="text-left">Pago Diario es un producto de Productos para Empleados SAPI de CV</p>
 
+                        </div>
+                    </div>
+                    <div class="container-infopg">
+                        <div class="icons-social">
+                            <a href="https://www.linkedin.com/company/pago-diario/" target="_blank">
+                                <figure class="m-b">
+                                    <img src="./assets/img/facebook.png">
+                                    <!-- IMAGEN 8 FACEBOOK  -->
+                                </figure>
+                            </a>
+                            <a href="https://www.instagram.com/tupagodiario/" target="_blank">
+                                <figure class="m-b">
+                                    <img src="./assets/img/ig.png">
+                                    <!-- IMAGEN 8 IG  -->
+                                </figure>
+                            </a>
+                            <a href="https://www.facebook.com/tupagodiario" target="_blank">
+                                <figure>
+                                    <img src="./assets/img/in.png">
+                                    <!-- IMAGEN 8 LINKEDIN  -->
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="btn-plat_footer">
+                            <a href="https://apps.apple.com/mx/app/pago-diario/id1505827398?l=en" target="_blank">
+                                <figure>
+                                    <img src="./assets/img/icon-01.png">
+                                    <!-- IMAGEN 8 FOOTER IMAGEN DE DESCARGA FE APLICACION -->
+                                </figure>
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.ih.pagodiario" target="_blank">
+                                <figure>
+                                    <img src="./assets/img/icon-02.png">
+                                    <!-- IMAGEN 8 FOOTER IMAGEN DE DESCARGA FE APLICACION -->
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="container-infopg">
-                <div class="icons-social">
-                    <a href="https://www.linkedin.com/company/pago-diario/" target="_blank">
-                        <figure class="m-b">
-                            <img src="./assets/img/facebook.png">
-                            <!-- IMAGEN 8 FACEBOOK  -->
-                        </figure>
-                    </a>
-                    <a href="https://www.instagram.com/tupagodiario/" target="_blank">
-                        <figure class="m-b">
-                            <img src="./assets/img/ig.png">
-                            <!-- IMAGEN 8 IG  -->
-                        </figure>
-                    </a>
-                    <a href="https://www.facebook.com/tupagodiario" target="_blank">
-                        <figure>
-                            <img src="./assets/img/in.png">
-                            <!-- IMAGEN 8 LINKEDIN  -->
-                        </figure>
-                    </a>
-                </div>
-                <div class="btn-plat_footer">
-                    <a href="https://apps.apple.com/mx/app/pago-diario/id1505827398?l=en" target="_blank">
-                        <figure>
-                            <img src="./assets/img/icon-01.png">
-                            <!-- IMAGEN 8 FOOTER IMAGEN DE DESCARGA FE APLICACION -->
-                        </figure>
-                    </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.ih.pagodiario" target="_blank">
-                        <figure>
-                            <img src="./assets/img/icon-02.png">
-                            <!-- IMAGEN 8 FOOTER IMAGEN DE DESCARGA FE APLICACION -->
-                        </figure>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
+            </footer>
 
-    <script type="text/javascript" src="./assets/js/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-    </script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <script type="text/javascript" src="./assets/slick/slick.js?v=time()"></script>
-    <script type="text/javascript" src="./assets/js/main.js?v=time()"></script>
-    <script type="text/javascript" src="./assets/js/timber.master.min.js?v=time()"></script>
-    <script type="text/javascript">
-        var travel;
-        var scrollPos = 0;
+            <script type="text/javascript" src="./assets/slick/slick.js?v=time()"></script>
+            <script type="text/javascript" src="./assets/js/main.js?v=time()"></script>
+            <script type="text/javascript" src="./assets/js/timber.master.min.js?v=time()"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+            </script>
+            <script type="text/javascript">
+                var travel;
+                var scrollPos = 0;
 
-        var mediaqueryList = window.matchMedia("(min-width: 767px)");
-        if (mediaqueryList.matches) {
-            travel = $("section.section-funcionamiento .container-funcionamiento").offset().top - 5;
-        } else {
-            travel = $("section.section-funcionamiento .container-funcionamiento > div").offset().top - 5;
-        }
+                var mediaqueryList = window.matchMedia("(min-width: 767px)");
+                if (mediaqueryList.matches) {
+                    travel = $("section.section-funcionamiento .container-funcionamiento").offset().top - 5;
+                } else {
+                    travel = $("section.section-funcionamiento .container-funcionamiento > div").offset().top - 5;
+                }
 
-        $(window).resize(function() {
-            var mediaqueryList = window.matchMedia("(min-width: 767px)");
-            if (mediaqueryList.matches) {
-                travel = $("section.section-funcionamiento .container-funcionamiento").offset().top - 5;
-            } else {
-                travel = $("section.section-funcionamiento .container-funcionamiento > div").offset().top - 5;
-            }
-        });
+                $(window).resize(function() {
+                    var mediaqueryList = window.matchMedia("(min-width: 767px)");
+                    if (mediaqueryList.matches) {
+                        travel = $("section.section-funcionamiento .container-funcionamiento").offset().top - 5;
+                    } else {
+                        travel = $("section.section-funcionamiento .container-funcionamiento > div").offset().top - 5;
+                    }
+                });
 
-        $(window).scroll(function() {
+                $(window).scroll(function() {
 
-            if ($(window).scrollTop() >= travel) {
-                $('section.section-funcionamiento .container-funcionamiento div div.first').css('display', 'none');
-                $('section.section-funcionamiento .container-funcionamiento div div.last').fadeIn(300);
-            } else {
-                $('section.section-funcionamiento .container-funcionamiento div div.last').css('display', 'none');
-                $('section.section-funcionamiento .container-funcionamiento div div.first').fadeIn(300);
-            }
-        });
+                    if ($(window).scrollTop() >= travel) {
+                        $('section.section-funcionamiento .container-funcionamiento div div.first').css('display', 'none');
+                        $('section.section-funcionamiento .container-funcionamiento div div.last').fadeIn(300);
+                    } else {
+                        $('section.section-funcionamiento .container-funcionamiento div div.last').css('display', 'none');
+                        $('section.section-funcionamiento .container-funcionamiento div div.first').fadeIn(300);
+                    }
+                });
 
 
 
-        var observer = new IntersectionObserver(function([e]) {
-            //e.target.style.background = "red";
-        }, {
-            rootMargin: '-1px 0px 0px 0px',
-        });
+                var observer = new IntersectionObserver(function([e]) {
+                    //e.target.style.background = "red";
+                }, {
+                    rootMargin: '-1px 0px 0px 0px',
+                });
 
-        observer.observe(document.querySelector("section.section-funcionamiento .container-funcionamiento"));
-    </script>
+                observer.observe(document.querySelector("section.section-funcionamiento .container-funcionamiento"));
+            </script>
 
-</html>
+            </html>

@@ -255,3 +255,64 @@ function validarEmail(email) {
     var regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     return regex.test(email) ? true : false;
 }
+
+$(window).scroll(function() {
+    if (screen.width > 768) {
+        var windowHeight = $(window).scrollTop();
+        var contenido2 = $("#cambio").offset();
+        contenido2 = contenido2.top;
+        if (windowHeight >= contenido2 - 70) {
+            console.log("1");
+
+            document.getElementById("texto-2").style.display = "block";
+            document.getElementById("texto-1").style.display = "none";
+
+        } else {
+            document.getElementById("texto-1").style.display = "block";
+            document.getElementById("texto-2").style.display = "none";
+
+
+            console.log("2");
+
+        }
+    } else if (screen.width < 760 && screen.width >= 411) {
+        var windowHeight = $(window).scrollTop();
+        var contenido2 = $("#cambio2").offset();
+        contenido2 = contenido2.top;
+        if (windowHeight >= contenido2 + 350) {
+            console.log("1");
+
+            document.getElementById("texto-2").style.display = "block";
+            document.getElementById("texto-1").style.display = "none";
+
+        } else {
+            document.getElementById("texto-1").style.display = "block";
+            document.getElementById("texto-2").style.display = "none";
+
+
+            console.log("2");
+
+        }
+    } else if (screen.width < 411) {
+
+
+        var windowHeight = $(window).scrollTop();
+        var contenido2 = $("#cambio2").offset();
+        contenido2 = contenido2.top;
+        if (windowHeight >= contenido2 + 300) {
+            console.log("1");
+
+            document.getElementById("texto-2").style.display = "block";
+            document.getElementById("texto-1").style.display = "none";
+
+        } else {
+            document.getElementById("texto-1").style.display = "block";
+            document.getElementById("texto-2").style.display = "none";
+
+
+            console.log("2");
+
+        }
+
+    }
+});
