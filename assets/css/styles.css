@@ -88,7 +88,7 @@ header nav a {
 .burger {
   width: 52px;
   height: 52px;
-  background: #1A448F;
+  background: #018fc0;
   border-radius: 100%;
   display: none;
   flex-direction: column;
@@ -589,7 +589,7 @@ section.section-ondemand .container div.on-demand-texto hr {
 }
 
 section.section-ondemand .container div.on-demand-texto p.first {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 section.section-ondemand .container div.on-demand-texto p {
@@ -1199,6 +1199,10 @@ footer .footercontainer {
 
 .icon-img-2 {
   width: 2rem;
+}
+
+.ft-65 {
+  font-size: 65%;
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
@@ -2290,6 +2294,10 @@ footer .footercontainer {
     margin-bottom: 20px;
     padding: 0;
   }
+
+  .alto-on {
+    height: 1201px;
+  }
 }
 
 @media only screen and (max-width: 360px) {
@@ -2302,5 +2310,19 @@ footer .footercontainer {
   .img-ondemand {
     width: 75%;
     margin-left: 23px;
+  }
+
+  .texto-footer-sm {
+    font-size: 13px;
+  }
+
+  .alto-on {
+    height: 1223px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .alto-on {
+    height: 1264px;
   }
 }
