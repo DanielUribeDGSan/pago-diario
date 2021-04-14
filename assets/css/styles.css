@@ -113,7 +113,8 @@ header nav a {
 
 header nav a.btn-azul_pd {
   border-radius: 7px;
-  background: #1A448F;
+  /**background: #1A448F;**/
+  background-color: #018fc0;
   color: #FFF;
   font-family: Montserrat;
   font-size: 14px;
@@ -237,9 +238,7 @@ div.poup-colaboradores .container form input[type="text"] {
   padding-left: 30px;
 }
 
-
 /* checkbox */
-
 input[type="checkbox"]+label::before {
   content: "";
   width: 26px;
@@ -282,9 +281,7 @@ input[type="checkbox"]:checked+label {
   color: #0fbf12;
 }
 
-
 /* checkbox \ */
-
 div.poup-colaboradores .container form input::placeholder {
   padding-left: 30px;
 }
@@ -609,7 +606,8 @@ section.section-ondemand .container div.on-demand-imgs {
 
 section.section-ondemand .container div.on-demand-imgs figure.img-01 {
   position: absolute;
-  top: -95px;
+  top: 82px;
+  right: -80px;
 }
 
 section.section-ondemand .container div.on-demand-imgs figure.img-02 {
@@ -628,7 +626,7 @@ section.section-ondemand .container div.on-demand-imgs figure.img-03 {
 }
 
 section.section-funcionamiento {
-  margin-bottom: 300px;
+  margin-bottom: 100px;
 }
 
 section.section-funcionamiento .container .container-funcionamiento p {
@@ -919,7 +917,7 @@ section.beneficios-empresas .container .container-beneficiosemp div p {
 }
 
 section.beneficios-colab {
-  margin-bottom: 300px;
+  margin-bottom: 100px;
 }
 
 section.beneficios-colab .container {
@@ -1003,7 +1001,8 @@ section.beneficios-colab .container .container-beneficioscolab div button:hover 
 
 footer {
   background: #004E6E;
-  padding-top: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 footer .container-infocontacto svg {
@@ -1093,12 +1092,12 @@ footer .img-celular figure {
 }
 
 footer .footercontainer {
-  padding-left: 50px;
+  display: block;
+  margin: 0 auto;
+  width: 85%;
 }
 
-
 /** Utilidades **/
-
 .check-acomodo {
   margin-left: -60px;
   margin-top: 10px;
@@ -1106,12 +1105,100 @@ footer .footercontainer {
   color: #ccc;
 }
 
+.mostrar {
+  display: block;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.center {
+  text-align: center;
+}
+
+.mt-2 {
+  margin-top: 20px;
+}
+
+.mt-4 {
+  margin-top: 40px;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.centrar {
+  display: block;
+  margin: 0 auto;
+}
+
+.centrar-f {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centrar-f2 {
+  display: flex;
+  justify-content: center;
+}
+
+.d-block {
+  display: block;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.espacio-logo {
+  margin-left: 61px;
+}
+
+.bg-azul-btn {
+  background-color: #018fc0;
+}
+
+.logo-footer {
+  width: 70%;
+}
+
+.icon-img {
+  width: 30%;
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.app-logo {
+  width: 40%;
+}
+
+.redes-logo {
+  width: 13%;
+}
+
+.text-decoration-none, .text-decoration-none:hover {
+  text-decoration: none;
+}
+
 .ocultar {
   display: none;
 }
 
-.mostrar {
-  display: block;
+.img-ondemand {
+  width: 70%;
+}
+
+.img-top {
+  margin-top: -80px;
+}
+
+.icon-img-2 {
+  width: 2rem;
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
@@ -1308,6 +1395,71 @@ footer .footercontainer {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
+
+  /**  .centrar-img {
+    text-align: center;
+  }
+**/
+  .float-r {
+    float: right;
+  }
+
+  .float-l {
+    float: left;
+  }
+
+  .app-logo {
+    width: 25%;
+  }
+
+  .logo-footer {
+    width: 50%;
+  }
+
+  section.section-ondemand .container {
+    flex-direction: column;
+  }
+
+  .alto-on {
+    height: 1450px;
+  }
+
+  .img-ondemand {
+    width: 77%;
+  }
+
+  section.section-ondemand .container div.on-demand-texto {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+  }
+
+  section.section-ondemand .container div.on-demand-imgs {
+    width: 100%;
+  }
+
+  section.section-ondemand .container div.on-demand-imgs figure.img-01 {
+    position: relative;
+    top: 0;
+  }
+
+  .img-top {
+    margin-top: 0px
+  }
+
+  section.section-ondemand .container div.on-demand-imgs figure.img-01 {
+    position: absolute;
+    top: 82px;
+    right: -6px;
+  }
+
+  section.section-funcionamiento .container-funcionamiento div button, section.section-funcionamiento .container-funcionamiento div a {
+    margin-top: 30px;
+    height: 47px;
+    width: 319px;
+  }
+
   header {
     padding-left: 20px;
     padding-right: 20px;
@@ -1351,6 +1503,8 @@ footer .footercontainer {
     top: 30px;
     display: block;
     cursor: pointer;
+    opacity: 1;
+    font-size: 70px;
   }
 
   header nav a.btn-azul_pd.login {
@@ -1559,16 +1713,10 @@ footer .footercontainer {
     padding-right: 0px;
   }
 
-  section.section-ondemand .container div.on-demand-imgs figure.img-02 {
-    position: absolute;
-    top: 379px;
-    left: -73px;
-    max-width: 290px;
-  }
-
   section.section-ondemand .container div.on-demand-imgs figure.img-01 {
     position: absolute;
-    top: 82px;
+    top: -43px;
+    left: 125px;
   }
 
   section.beneficios-empresas .container .container-beneficiosemp div {
@@ -1785,7 +1933,7 @@ footer .footercontainer {
   }
 
   section.section-funcionamiento .container-funcionamiento div h3 {
-    text-align: center;
+    text-align: left;
     font-size: 16px;
   }
 
@@ -2047,9 +2195,34 @@ footer .footercontainer {
   }
 }
 
-@media only screen and (max-width: 320px) {}
-
 @media (max-width: 760px) {
+  section.section-ondemand .container div.on-demand-imgs figure.img-01 {
+    position: relative;
+    top: -45px;
+    left: 0px;
+  }
+
+  .img-top {
+    margin-top: 0px;
+  }
+
+  .img-ondemand {
+    width: 75%;
+    margin-left: 44px;
+  }
+
+  .ocultar-movil {
+    display: none !important;
+  }
+
+  .mostrar-movil {
+    display: block;
+  }
+
+  .espacio-logo {
+    margin-left: 0px !important;
+  }
+
   section.section-funcionamiento {
     margin-bottom: 100px;
   }
@@ -2058,10 +2231,6 @@ footer .footercontainer {
     font-size: 20px;
     letter-spacing: 8px;
     line-height: 50px;
-  }
-
-  .center-movil {
-    text-align: center;
   }
 
   section.section-ondemand .container div.on-demand-imgs figure.img-03 {
@@ -2105,51 +2274,33 @@ footer .footercontainer {
     padding-top: 45px;
     margin-bottom: 40px;
   }
+
+  section.section-ondemand .container div.on-demand-texto h2 {
+    font-size: 32px;
+    letter-spacing: 2px;
+    line-height: 34px;
+  }
+
+  section.section-ondemand .container div.on-demand-texto p.texto-tendencia {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 25px;
+    line-height: 34px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
 }
 
+@media only screen and (max-width: 360px) {
+  section.section-ondemand .container div.on-demand-imgs figure.img-01 {
+    position: relative;
+    top: -45px;
+    left: 10px;
+  }
 
-/** Utilidades **/
-
-.justify {
-  text-align: justify;
-}
-
-.center {
-  text-align: center;
-}
-
-.mt-2 {
-  margin-top: 20px;
-}
-
-.mt-4 {
-  margin-top: 40px;
-}
-
-.w-100 {
-  width: 100% !important;
-}
-
-.centrar {
-  display: block;
-  margin: 0 auto;
-}
-
-.centrar-f {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.centrar-f2 {
-  display: flex;
-  justify-content: center;
-}
-
-.d-block {
-  display: block;
-}
-
-.mb-100 {
-  margin-bottom: 100px;
+  .img-ondemand {
+    width: 75%;
+    margin-left: 23px;
+  }
 }
