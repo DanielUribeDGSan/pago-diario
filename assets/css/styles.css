@@ -549,7 +549,7 @@ section.quepago .container div button:hover {
 }
 
 section.section-ondemand {
-  margin-bottom: 250px;
+  margin-bottom: 100px;
 }
 
 section.section-ondemand .container {
@@ -576,7 +576,7 @@ section.section-ondemand .container div.on-demand-texto p.texto-tendencia {
   font-family: Montserrat;
   font-size: 25px;
   line-height: 49px;
-  letter-spacing: 5px;
+  letter-spacing: 0px;
   margin-bottom: 20px;
   padding: 0;
 }
@@ -630,10 +630,15 @@ section.section-funcionamiento {
 }
 
 section.section-funcionamiento .container .container-funcionamiento p {
-  color: #666;
+  /**  color: #666;
   font-family: Montserrat;
   font-size: 17px;
   font-weight: 300;
+  **/
+  color: #000;
+  font-family: Montserrat;
+  font-size: 17px;
+  font-weight: 400;
 }
 
 section.section-funcionamiento .container {
@@ -662,12 +667,12 @@ section.section-funcionamiento .container-funcionamiento div div.first {
 }
 
 section.section-funcionamiento .container-funcionamiento div h3 {
-  color: #4F4F4F;
+  color: #004E6E;
   font-family: Montserrat;
-  font-size: 26px;
-  letter-spacing: 4px;
-  line-height: 35px;
-  font-weight: 400;
+  font-size: 36px;
+  letter-spacing: 0px;
+  line-height: 41px;
+  font-weight: 800;
   margin-bottom: 40px;
 }
 
@@ -707,7 +712,7 @@ section.section-funcionamiento .container-funcionamiento figure img.last {
 }
 
 section.section-funcionamiento .container-funcionamiento div p:first-child {
-  margin-bottom: 50px;
+  margin-bottom: 22px;
 }
 
 section.section-funcionamiento .container-funcionamiento div p {
@@ -837,7 +842,7 @@ section.section-testimonios .slider-testimonios .container-card .card-titulo {
 }
 
 section.beneficios-empresas {
-  margin-bottom: 250px;
+  margin-bottom: 100px;
 }
 
 section.beneficios-empresas .container {
@@ -845,11 +850,11 @@ section.beneficios-empresas .container {
 }
 
 section.beneficios-empresas .container h2 {
-  color: #4F4F4F;
+  color: #004E6E;
   font-family: Montserrat;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 40px;
-  letter-spacing: 15.13px;
+  letter-spacing: 1.0px;
   line-height: 49px;
   margin-bottom: 100px;
   text-align: center;
@@ -905,15 +910,17 @@ section.beneficios-empresas .container .container-beneficiosemp div button:hover
 }
 
 section.beneficios-empresas .container .container-beneficiosemp div p:first-child {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 section.beneficios-empresas .container .container-beneficiosemp div p {
-  color: #666;
+  /**color: #666;**/
+  color: #000;
   font-family: Montserrat;
   font-size: 17px;
   line-height: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  font-weight: 400px;
 }
 
 section.beneficios-colab {
@@ -925,11 +932,11 @@ section.beneficios-colab .container {
 }
 
 section.beneficios-colab .container h2 {
-  color: #4F4F4F;
+  color: #004E6E;
   font-family: Montserrat;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 40px;
-  letter-spacing: 10px;
+  letter-spacing: 1.0px;
   line-height: 49px;
   text-align: center;
   margin-bottom: 100px;
@@ -947,7 +954,7 @@ section.beneficios-colab .container .container-beneficioscolab div {
 }
 
 section.beneficios-colab .container .container-beneficioscolab div p:first-child {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 section.beneficios-colab .container .container-beneficioscolab div p:nth-child(5) {
@@ -955,11 +962,12 @@ section.beneficios-colab .container .container-beneficioscolab div p:nth-child(5
 }
 
 section.beneficios-colab .container .container-beneficioscolab div p {
-  color: #666;
+  color: #000;
   font-family: Montserrat;
   font-size: 17px;
   line-height: 32px;
   margin-bottom: 17px;
+  font-weight: 400;
 }
 
 section.beneficios-colab .container .container-beneficioscolab figure {
@@ -1098,6 +1106,20 @@ footer .footercontainer {
 }
 
 /** Utilidades **/
+.d-iblock {
+  display: inline-block;
+}
+
+.logos-content {
+  width: 44%;
+}
+
+.espacio-content {
+  display: block;
+  margin: 0 auto;
+  width: 42%;
+}
+
 .check-acomodo {
   margin-left: -60px;
   margin-top: 10px;
@@ -1161,6 +1183,11 @@ footer .footercontainer {
   background-color: #018fc0;
 }
 
+.cl-azul {
+  color: #004E6E;
+  font-weight: 700;
+}
+
 .logo-footer {
   width: 70%;
 }
@@ -1205,6 +1232,18 @@ footer .footercontainer {
   font-size: 65%;
 }
 
+.ft-50 {
+  font-size: 50px !important;
+}
+
+.ft-21 {
+  font-size: 21px !important;
+}
+
+.w-70 {
+  width: 70% !important;
+}
+
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
 
   /* SECCION 2 */
@@ -1233,6 +1272,12 @@ footer .footercontainer {
 }
 
 @media only screen and (min-width: 960px) and (max-width: 1024px) {
+  section.section-ondemand .container div.on-demand-imgs figure.img-01 {
+    position: absolute;
+    top: 82px;
+    right: 0px;
+  }
+
   header {
     padding-left: 20px;
     padding-right: 20px;
@@ -1398,7 +1443,33 @@ footer .footercontainer {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .espacio-content {
+    display: block;
+    margin: 0 auto;
+    width: 62%;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 959px) {
+  .w-70 {
+    width: 100% !important;
+  }
+
+  .logos-content {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .ft-32-md {
+    font-size: 32px !important;
+  }
+
+  .espacio-content {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+  }
 
   /**  .centrar-img {
     text-align: center;
@@ -1938,7 +2009,8 @@ footer .footercontainer {
 
   section.section-funcionamiento .container-funcionamiento div h3 {
     text-align: left;
-    font-size: 16px;
+    font-size: 21px;
+    line-height: 31px;
   }
 
   /* SECTION on deman */
@@ -2200,6 +2272,12 @@ footer .footercontainer {
 }
 
 @media (max-width: 760px) {
+  .espacio-content {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
   section.section-ondemand .container div.on-demand-imgs figure.img-01 {
     position: relative;
     top: -45px;
@@ -2296,7 +2374,11 @@ footer .footercontainer {
   }
 
   .alto-on {
-    height: 1201px;
+    height: 1240px;
+  }
+
+  .logos-content {
+    width: 100%;
   }
 }
 
@@ -2321,8 +2403,14 @@ footer .footercontainer {
   }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 376px) {
   .alto-on {
     height: 1264px;
+  }
+
+  section.section-funcionamiento .container-funcionamiento div h3 {
+    text-align: left;
+    font-size: 19px;
+    line-height: 31px;
   }
 }
