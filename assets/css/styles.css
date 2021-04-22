@@ -1107,6 +1107,15 @@ footer .footercontainer {
 }
 
 /** Utilidades **/
+.pegajoso {
+  position: fixed;
+  z-index: 60;
+  width: 100%;
+  background: #004E6E;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .d-iblock {
   display: inline-block;
 }

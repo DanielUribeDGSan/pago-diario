@@ -255,3 +255,25 @@ function validarEmail(email) {
   var regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
   return regex.test(email) ? true : false;
 }
+
+
+$(function() {
+  $(document).on("scroll", function() {
+    var desplazamientoActual = $(document).scrollTop();
+    var controlArriba = $("#menu-sticky");
+    if (desplazamientoActual > 100) {
+      //controlArriba.show();
+      $("#menu-sticky").addClass("pegajoso");
+      console.log("Estoy en scroll");
+    }
+    if (desplazamientoActual < 100) {
+      //controlArriba.hide();
+      console.log("Estoy en no scroll");
+      $("#menu-sticky").removeClass("pegajoso");
+    }
+  });
+  $("#irarriba a").on("click", function(e) {
+    e.preventDefault();
+    location.href = "#container-regiter";
+  });
+});
